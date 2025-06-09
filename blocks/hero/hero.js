@@ -1,7 +1,5 @@
 import { decorateBlock } from '../../scripts/aem.js';
 
-
-
 export default function decorate(block) {
   try {
     block.querySelectorAll('div.hero > div > div').forEach(item => {
