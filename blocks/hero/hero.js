@@ -1,4 +1,6 @@
 import { decorateBlock } from '../../scripts/aem.js';
+import SocialLinks from '../../@wolfsellers/SocialLinks/socialLinks.js';
+import { render, h } from '@dropins/tools/preact.js';
 
 export default function decorate(block) {
   try {
@@ -19,9 +21,12 @@ export default function decorate(block) {
         </div>
       </div>
     `;
+
     const wrapper = document.createElement('div');
     wrapper.innerHTML = heroBannerStructure;
     wrapper.querySelector('#topContentBanner').append(block);
+    const bottomContentBanner = wrapper.querySelector('#bottomContentBanner');
+    render(h(SocialLinks), bottomContentBanner);
     heroBanner.append(wrapper);
   } catch (error) {
     throw new Error(error);
