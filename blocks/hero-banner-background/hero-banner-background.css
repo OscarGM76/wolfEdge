@@ -1,0 +1,10 @@
+#heroBannerContainer{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    padding: 1rem;
+}
+
+#heroBannerContainer .section {
+    background-color: red;
+}
