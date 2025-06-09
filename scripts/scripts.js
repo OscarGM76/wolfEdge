@@ -72,7 +72,7 @@ export function decorateMain(main) {
  * @param {Element} doc The container element
  */
 async function loadEager(doc) {
-  setLanguage();
+  await setLanguage();
   decorateTemplateAndTheme();
   const main = doc.querySelector('main');
   if (main) {
