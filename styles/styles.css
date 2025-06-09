@@ -35,9 +35,10 @@
   --heading-font-size-m: 27px;
   --heading-font-size-s: 24px;
   --heading-font-size-xs: 22px;
+  --header-links: 1.25rem; /* 20px */
 
   /* nav height */
-  --nav-height: 64px;
+  --nav-height: 114px;
 }
 
 /* fallback fonts */
@@ -67,6 +68,7 @@
     --heading-font-size-m: 22px;
     --heading-font-size-s: 20px;
     --heading-font-size-xs: 18px;
+    --header-links: .9375rem; /* 15px */
   }
 }
 
@@ -80,12 +82,15 @@ body {
   line-height: 1.6;
 }
 
-body.appear {
-  display: block;
+body * {
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0
 }
 
-header {
-  height: var(--nav-height);
+body.appear {
+  display: block;
 }
 
 header .header,
