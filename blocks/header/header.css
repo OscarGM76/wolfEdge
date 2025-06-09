@@ -18,13 +18,15 @@ header nav {
   grid-template:
     'brand tools hamburger ' var(--nav-height)
     'sections sections sections' 1fr / auto 1fr auto;
-  align-items: center;
   gap: 0 24px;
   margin: auto;
   max-width: 1248px;
   height: var(--nav-height);
-  padding: 0 24px;
   font-family: var(--body-font-family);
+}
+
+header nav > *:empty {
+  display: none;
 }
 
 header nav[aria-expanded='true'] {
@@ -40,8 +42,7 @@ header nav[aria-expanded='true'] {
     display: flex;
     justify-content: space-between;
     gap: 0 32px;
-    max-width: 90rem;
-    padding: 0 32px;
+    max-width: 87.5rem;
   }
 
   header nav[aria-expanded='true'] {
@@ -149,11 +150,11 @@ header nav[aria-expanded='true'] .nav-hamburger-icon::after {
 /* brand */
 header .nav-brand {
   grid-area: brand;
-  flex-basis: 160px;
+  flex-basis: 238px;
   font-size: var(--heading-font-size-s);
   line-height: 1;
   position: relative;
-  top: -.5rem;
+  top: 0.125rem;
 }
 
 header nav .nav-brand img {
@@ -195,6 +196,26 @@ header nav .nav-sections ul > li > ul > li {
   font-weight: 400;
 }
 
+header .switcher-lang-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+  padding-top: 30px;
+}
+
+header .switcher-lang-container .switcher-lang {
+  text-transform: uppercase;
+  color: var(--color-red);
+}
+
+header .switcher-lang-container .switcher-lang > div > div:first-child {
+  display: none;
+}
+.header .switcher-lang-wrapper + .default-content-wrapper img {
+  max-height: 2.0625rem;
+  width: auto;
+}
+
 @media (width >= 900px) {
   header nav .nav-sections {
     visibility: visible;
@@ -218,7 +239,7 @@ header nav .nav-sections ul > li > ul > li {
   }
   
   header nav .nav-sections ul li {
-    align-items: center;
+    padding-top: 1.875rem;
     display: flex;
   }
 
@@ -243,8 +264,6 @@ header nav .nav-sections ul > li > ul > li {
     content: '';
     display: inline-block;
     position: static;
-    top: 0.5em;
-    right: 2px;
     transform: rotate(135deg);
     width: 6px;
     height: 6px;
@@ -252,12 +271,12 @@ header nav .nav-sections ul > li > ul > li {
     border-radius: 0 1px 0 0;
     border-width: 2px 2px 0 0;
     margin-left: .25rem;
+    margin-top: .375rem;
   }
 
   header nav .nav-sections .nav-drop[aria-expanded='true']::after,
   header nav .nav-sections .nav-drop:hover::after {
-    top: unset;
-    bottom: 0.5em;
+    margin-top: .5rem;
     transform: rotate(315deg);
   }
 
