@@ -13,8 +13,28 @@ footer .footer p {
   margin: 0;
 }
 
+.footer-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.footer-container > div > div > div > div {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.footer-container div {
+  flex: 1;
+}
+
 @media (width >= 900px) {
   footer .footer > div {
     padding: 40px 32px 24px;
+  }
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
