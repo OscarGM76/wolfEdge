@@ -12,6 +12,7 @@ import {
   loadSections,
   loadCSS,
 } from './aem.js';
+import { setLanguage } from './wolfsellers.js';
 
 /**
  * Builds hero block and prepends to main in a new section.
@@ -71,7 +72,7 @@ export function decorateMain(main) {
  * @param {Element} doc The container element
  */
 async function loadEager(doc) {
-  document.documentElement.lang = 'en';
+  setLanguage();
   decorateTemplateAndTheme();
   const main = doc.querySelector('main');
   if (main) {
