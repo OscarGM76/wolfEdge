@@ -3,11 +3,11 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
-  padding: .625rem 1.25rem 0;
   backdrop-filter: blur(15px);
-  background-color: rgba(255, 255, 255, 0.6);
-  padding: 0;
+  background-color: rgba(255, 255, 255, .6);
+  padding: 0 1.25rem;
 }
+
 header .nav-wrapper {
   width: 100%;
 }
@@ -40,7 +40,7 @@ header nav[aria-expanded='true'] {
     display: flex;
     justify-content: space-between;
     gap: 0 32px;
-    max-width: 1264px;
+    max-width: 90rem;
     padding: 0 32px;
   }
 
@@ -86,6 +86,7 @@ header nav .nav-hamburger-icon {
   width: 2.5rem;
   display: flex;
 }
+
 header nav .nav-hamburger-icon,
 header nav .nav-hamburger-icon::before,
 header nav .nav-hamburger-icon::after {
@@ -196,7 +197,6 @@ header nav .nav-sections ul > li > ul > li {
 
 @media (width >= 900px) {
   header nav .nav-sections {
-    display: block;
     visibility: visible;
     white-space: nowrap;
     height: 100%;
@@ -209,15 +209,23 @@ header nav .nav-sections ul > li > ul > li {
     max-width: none;
     background: none;
   }
+
+  header nav .nav-sections ul {
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    flex-wrap: wrap;
+  }
   
+  header nav .nav-sections ul li {
+    align-items: center;
+    display: flex;
+  }
+
   header nav .nav-sections .default-content-wrapper,
   header nav .nav-sections .default-content-wrapper > ul,
   header nav .nav-sections .default-content-wrapper > ul > li {
     height: 100%;
-  }
-  header nav .nav-sections ul li {
-    align-items: center;
-    display: flex;
   }
   
   header nav .nav-sections .nav-drop {
@@ -225,6 +233,7 @@ header nav .nav-sections ul > li > ul > li {
     padding-right: 16px;
     cursor: pointer;
   }
+
   header .nav-drop img {
     max-height: 1.25rem;
     width: auto;
@@ -242,19 +251,14 @@ header nav .nav-sections ul > li > ul > li {
     border: 2px solid currentcolor;
     border-radius: 0 1px 0 0;
     border-width: 2px 2px 0 0;
+    margin-left: .25rem;
   }
 
-  header nav .nav-sections .nav-drop[aria-expanded='true']::after {
+  header nav .nav-sections .nav-drop[aria-expanded='true']::after,
+  header nav .nav-sections .nav-drop:hover::after {
     top: unset;
     bottom: 0.5em;
     transform: rotate(315deg);
-  }
-
-  header nav .nav-sections ul {
-    display: flex;
-    gap: 24px;
-    margin: 0;
-    flex-wrap: wrap;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li {
@@ -267,6 +271,10 @@ header nav .nav-sections ul > li > ul > li {
     position: relative;
   }
 
+  header nav .nav-sections .default-content-wrapper > ul > li > ul > li {
+    padding: 8px 0;
+  }
+
   header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded='true'] > ul,
   header nav .nav-sections .default-content-wrapper > ul > li.nav-drop:hover > ul {
     position: absolute;
@@ -274,7 +282,7 @@ header nav .nav-sections ul > li > ul > li {
     width: 100%;
     top: var(--nav-height);
     padding: 16px;
-    background-color: rgba(255,255,255,0.6);
+    background-color: rgba(255,255,255,.6);
     white-space: initial;
     height: calc(100dvh - var(--nav-height));
     max-height: 500px;
@@ -301,10 +309,6 @@ header nav .nav-sections ul > li > ul > li {
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     border-bottom: 8px solid var(--light-color);
-  }
-
-  header nav .nav-sections .default-content-wrapper > ul > li > ul > li {
-    padding: 8px 0;
   }
 }
 
