@@ -15,6 +15,7 @@ export default async function decorate(block) {
   block.textContent = '';
   const footer = document.createElement('div');
   footer.classList.add('footer-container');
+  footer.classList.add('footer-background');
   
   while (fragment.firstElementChild) footer.append(fragment.firstElementChild);
 
