@@ -75,7 +75,11 @@ async function applyUrlToButtons(param) {
   return `/${lang}/${path.replace(/^\/+/, '')}`; // garantiza que no haya doble slash
 }
 
+function getLanguage() {
+  return localStorage.getItem('language') || 'es';
+}
 export {
   setLanguage,
   applyUrlToButtons,
+  getLanguage
 };

@@ -1,14 +1,15 @@
 import { getMetadata } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
-
+import { getLanguage } from '../../scripts/wolfsellers.js';
 /**
  * loads and decorates the footer
  * @param {Element} block The footer block element
  */
 export default async function decorate(block) {
   // load footer as fragment
+  const language = getLanguage();
   const footerMeta = getMetadata('footer');
-  const footerPath = footerMeta ? new URL(footerMeta, window.location).pathname : '/footer';
+  const footerPath = footerMeta ? new URL(footerMeta, window.location).pathname : `/${language}/footer`;
   const fragment = await loadFragment(footerPath);
 
   // decorate footer DOM
@@ -16,7 +17,7 @@ export default async function decorate(block) {
   const footer = document.createElement('div');
   footer.classList.add('footer-container');
   footer.classList.add('footer-background');
-  
+
   while (fragment.firstElementChild) footer.append(fragment.firstElementChild);
 
   block.append(footer);
