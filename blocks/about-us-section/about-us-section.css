@@ -1,0 +1,62 @@
+.about-us-section-wrapper {
+    margin: auto!important;
+    max-width: 100%!important;
+    padding: 20px!important;
+}
+
+.about-us-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+.about-us-section .aboutUsTitle {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.about-us-section .aboutUsTitle strong {
+    font-weight: normal;
+    color: #ed1c24;
+}
+
+.about-us-section .aboutUsDescription {
+    padding: 10px 90px 0;
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .about-us-section .aboutUsDescription {
+        padding: 20px;
+    }
+}
+
+
+.about-us-section .viewMoreAboutUsButton {
+    text-align: center;
+    word-wrap: break-word;
+    color: #fff;
+    background: transparent linear-gradient(90deg, #fff -20%, #dcdce3 101%, #770e12 100%);
+    border: none;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    transition: all .5s;
+    padding: 10px;
+    width: 250px;
+    margin: 0.5rem auto 0.5rem auto;
+    cursor: pointer;
+    color: #4e4d52;
+    font-weight: bold;
+}
+
+.about-us-section .viewMoreAboutUsButton:hover {
+    border: none;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px #4e4d52;
+    transform: scale(.9, .9);
+}

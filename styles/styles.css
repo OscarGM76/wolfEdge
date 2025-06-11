@@ -165,11 +165,6 @@ a:any-link {
   overflow-wrap: break-word;
 }
 
-a:hover {
-  color: var(--link-hover-color);
-  text-decoration: underline;
-}
-
 /* buttons */
 a.button:any-link,
 button {
@@ -198,7 +193,7 @@ a.button:hover,
 a.button:focus,
 button:hover,
 button:focus {
-  background-color: var(--link-hover-color);
+  /* background-color: var(--link-hover-color); */
   cursor: pointer;
 }
 
@@ -238,7 +233,7 @@ main > .section {
 }
 
 main > .section > div {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: auto;
   padding: 0 24px;
 }
@@ -259,4 +254,28 @@ main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
+}
+
+.viewMoreContainerButton .viewMoreButton {
+  text-align: center;
+  word-wrap: break-word;
+  color: #fff;
+  background: transparent linear-gradient(90deg, #fff -20%, #dcdce3 101%, #770e12 100%);
+  border: none;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  transition: all .5s;
+  padding: 10px;
+  width: 250px;
+  margin: 0.5rem auto 0.5rem auto;
+  cursor: pointer;
+  color: #4e4d52;
+  font-weight: bold;
+}
+
+.viewMoreContainerButton .viewMoreButton:hover {
+  border: none;
+  background-color: #fff;
+  box-shadow: 1px 1px 10px #4e4d52;
+  transform: scale(.9, .9);
 }
