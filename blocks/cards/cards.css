@@ -25,3 +25,52 @@
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+
+/* CLOUD CARDS */
+.cards.cloud-cards li {
+	border: none;
+	border-radius: 20px;
+	box-shadow: 20px 20px 60px rgba(0,0,0,.1);
+	padding-inline: 20px;
+	padding-block-end: 10px;
+}
+
+.cards.cloud-cards li img {
+	object-fit: initial;
+}
+
+.cards.cloud-cards .cards-card-body {
+	margin: 0;
+}
+
+.cards.cloud-cards li h4 {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.1;
+	margin: 0;
+	text-align: center;
+}
+
+.cards.cloud-cards li p {
+	color: #333537;
+	font-size: 17px;
+	margin: 0;
+	text-align: justify;
+}
+
+.cards.cloud-cards li .button-container {
+	text-align: center;
+}
+
+.cards.cloud-cards li a.button {
+	align-items: center;
+	background: transparent;
+	border-radius: 0;
+	color: #ED1C24;
+	display: inline-flex;
+	font-size: 18px;
+	font-weight: bold;
+	height: 54px;
+	justify-content: center;
+	margin: 0;
+}

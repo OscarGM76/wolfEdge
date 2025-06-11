@@ -1,0 +1,17 @@
+.adobe-cloud h1 {
+	color: #EAEAEA;
+	font-size: 10rem;
+	font-weight: 700;
+	margin: 80px 0 20px 0;
+}
+
+.adobe-cloud h3 {
+	font-size: 18px;
+	font-weight: 600;
+	margin: 0;
+	padding: 0 0 20px 20px;
+}
+
+.adobe-cloud.space {
+	margin-block: 40px 20px;
+}
