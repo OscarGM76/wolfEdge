@@ -21,4 +21,27 @@ export default async function decorate(block) {
   while (fragment.firstElementChild) footer.append(fragment.firstElementChild);
 
   block.append(footer);
+
+  // Group icon pairs + text in the social footer
+const socialParagraph = footer.querySelector(
+  '.secondcolumn > div > div:nth-of-type(1) > p:nth-of-type(2)'
+);
+
+if (socialParagraph) {
+  const links = [...socialParagraph.querySelectorAll('a')];
+  socialParagraph.innerHTML = ''; // clean to reinsert
+
+  for (let i = 0; i < links.length; i += 2) {
+    const wrapper = document.createElement('span');
+    wrapper.style.display = 'inline-flex';
+    wrapper.style.alignItems = 'center';
+    wrapper.style.gap = '0.25rem';
+    wrapper.style.marginRight = '0.5rem';
+    wrapper.style.whiteSpace = 'nowrap';
+
+    wrapper.appendChild(links[i]);
+    if (links[i + 1]) wrapper.appendChild(links[i + 1]); // text
+    socialParagraph.appendChild(wrapper);
+  }
+}
 }
