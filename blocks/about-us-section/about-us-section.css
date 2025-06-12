@@ -1,62 +1,330 @@
-.about-us-section-wrapper {
-    margin: auto!important;
-    max-width: 100%!important;
-    padding: 20px!important;
+.about-us-section-container {
+    position: relative;
+    color: #333537;
+    font-family: "Hind", sans-serif;
+    margin-bottom: 0 !important;
 }
 
-.about-us-section {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 1px solid #000;
-}
-
-.about-us-section .aboutUsTitle {
-    text-align: center;
-    font-size: 2rem;
+.about-us-section-container h1 {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1.1;
+    word-wrap: break-word;
     margin: 0;
+    margin-bottom: 2rem;
 }
 
-.about-us-section .aboutUsTitle strong {
-    font-weight: normal;
-    color: #ed1c24;
-}
-
-.about-us-section .aboutUsDescription {
-    padding: 10px 90px 0;
-    font-size: 1rem;
+.about-us-section-container p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.42857143;
+    text-rendering: optimizeLegibility;
+    word-wrap: normal;
     margin: 0;
-    text-align: center;
+    padding: 0;
 }
 
-@media only screen and (max-width: 767px) {
-    .about-us-section .aboutUsDescription {
-        padding: 20px;
+@media (width >= 768px) {
+    .about-us-section-container h1 {
+        font-size: 2.75rem;
+        font-weight: 600;
+        margin-bottom: 40px;
     }
 }
 
+/**************************** HEAD ****************************/
 
-.about-us-section .viewMoreAboutUsButton {
-    text-align: center;
-    word-wrap: break-word;
-    color: #fff;
-    background: transparent linear-gradient(90deg, #fff -20%, #dcdce3 101%, #770e12 100%);
-    border: none;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.16);
-    border-radius: 10px;
-    transition: all .5s;
-    padding: 10px;
-    width: 250px;
-    margin: 0.5rem auto 0.5rem auto;
-    cursor: pointer;
-    color: #4e4d52;
-    font-weight: bold;
+.about-us-section-container .head-wrapper {
+    margin: 0;
+    padding: 0;
+    max-width: none;
 }
 
-.about-us-section .viewMoreAboutUsButton:hover {
-    border: none;
-    background-color: #fff;
-    box-shadow: 1px 1px 10px #4e4d52;
-    transform: scale(.9, .9);
+.about-us-section-container .head-wrapper .head {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.about-us-section-container .head-wrapper .head > div:first-child {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.about-us-section-container .head-wrapper .head > div:first-child > div {
+    width: 100%;
+}
+
+.about-us-section-container .head-wrapper .head > div:first-child > div img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.about-us-section-container .head-wrapper .head > div:last-child {
+    position: relative;
+    top: 0;
+
+    display: flex;
+    justify-content: flex-start;
+
+    max-width: 1400px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 140px;
+    margin: 0 auto;
+
+    z-index: 0;
+}
+
+.about-us-section-container .head-wrapper .head > div:last-child > div {
+    width: 100%;
+    max-width: 50%;
+}
+
+/**************************** HEAD - TEXT ****************************/
+
+.about-us-section-container .head-wrapper .head > div:last-child > div > p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.42857143;
+    text-rendering: optimizeLegibility;
+    word-wrap: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.about-us-section-container .head-wrapper .head > div:last-child > div > h3 {
+    font-size: 52px;
+    font-weight: 300;
+    line-height: 56px;
+    word-wrap: normal;
+    text-rendering: optimizeLegibility;
+    margin: 0;
+    padding: 0;
+}
+
+.about-us-section-container
+    .head-wrapper
+    .head
+    > div:last-child
+    > div
+    > h3
+    > strong {
+    color: #ed1c24;
+}
+
+/**************************** COLUMNS ****************************/
+
+.about-us-section-container .columns-wrapper {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    margin-top: 2.5rem;
+    padding: 0 1.25rem;
+}
+
+.about-us-section-container .columns-wrapper .columns {
+    width: 100%;
+    padding: 0;
+}
+
+/**************************** COLUMNS 1 ****************************/
+
+.about-us-section-container .columns-wrapper .columns > div:nth-child(1) {
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.about-us-section-container
+    .columns-wrapper
+    .columns
+    > div:nth-child(1)
+    .columns-img-col {
+    max-width: calc(41.6667% - 20px);
+}
+
+.about-us-section-container
+    .columns-wrapper
+    .columns
+    > div:nth-child(1)
+    > div:last-child
+    img {
+    object-fit: contain;
+    max-width: 326px;
+    margin-top: 5rem;
+}
+
+/**************************** COLUMNS 2 ****************************/
+
+.about-us-section-container .columns-wrapper .columns > div:nth-child(2) {
+    text-align: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 25px 0;
+    border-radius: 1.25rem;
+
+    color: white;
+    background-color: #4e4d52;
+}
+
+.about-us-section-container .columns-wrapper .columns > div:nth-child(2) h2 {
+    margin: 0;
+}
+
+/**************************** COLUMNS 3 ****************************/
+
+.about-us-section-container .columns-wrapper .columns > div:nth-child(3) {
+    margin: 1.25rem 0;
+    margin-bottom: 32rem;
+}
+
+.about-us-section-container
+    .columns-wrapper
+    .columns
+    > div:nth-child(3)
+    > div:last-child {
+    position: relative;
+    right: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+
+    align-self: flex-end;
+    max-width: calc(34% - 20px);
+}
+
+.about-us-section-container
+    .columns-wrapper
+    .columns
+    > div:nth-child(3)
+    > div:last-child
+    > h2 {
+    font-size: 120px;
+    line-height: 111px;
+    color: #eaeaea;
+    margin: 0;
+}
+
+.about-us-section-container
+    .columns-wrapper
+    .columns
+    > div:nth-child(3)
+    > div:last-child
+    > h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    height: 52px;
+    width: 260px;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    border-radius: 10px;
+    background: transparent
+        radial-gradient(at 24% 50%, #ffffff 0%, #dcdce3 100%);
+    box-shadow: 0px 10px 10px #00000029;
+}
+
+.about-us-section-container
+    .columns-wrapper
+    .columns
+    > div:nth-child(3)
+    > div:last-child
+    > h1
+    > a {
+    color: #4e4d52;
+}
+
+.about-us-section-container
+    .columns-wrapper
+    .columns
+    > div:nth-child(3)
+    > div:last-child
+    > h1
+    > a:hover {
+    text-decoration: none;
+}
+
+/**************************** COLUMNS 3 ****************************/
+
+.about-us-section-container
+    .columns-wrapper
+    .columns
+    > div:nth-child(4)
+    > div:nth-child(2) {
+    position: relative;
+    left: -10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 2.5rem;
+    max-width: calc(34% - 20px);
+}
+
+.about-us-section-container
+    .columns-wrapper
+    .columns
+    > div:nth-child(4)
+    > div:nth-child(2)
+    > h2 {
+    text-align: end;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: 0;
+    color: #4e4d52;
+}
+
+.about-us-section-container
+    .columns-wrapper
+    .columns
+    > div:nth-child(4)
+    > div:nth-child(2)
+    .button-container
+    .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    height: 52px;
+    width: 260px;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    border-radius: 10px;
+    color: #4e4d52;
+    background: transparent
+        radial-gradient(at 24% 50%, #ffffff 0%, #dcdce3 100%);
+    box-shadow: 0px 10px 10px #00000029;
+}
+
+/**************************** BG_IMG ****************************/
+
+.about-us-section-container .bg-img-wrapper {
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: none;
+    z-index: -1;
+}
+
+.about-us-section-container .bg-img-wrapper img {
+    width: 100%;
+    object-fit: cover;
 }

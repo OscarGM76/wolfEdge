@@ -49,6 +49,12 @@ async function setLanguage() {
   const lang = localStorage.getItem('language') || 'es';
 
   localStorage.setItem('language', lang);
+
+  if (!window.location.pathname.startsWith(`/${lang}/`)) {
+    const cleanPath = window.location.pathname.replace(/^\/(es|en)\//, '');
+    window.location.replace(`/${lang}${cleanPath}`);
+  }
+
   if (window.location.pathname === '/') {
     window.location.replace(`/${lang}/`);
   }
@@ -59,7 +65,21 @@ async function setLanguage() {
   //   });
   // });
 }
+async function applyUrlToButtons(param) {
+  const lang = localStorage.getItem('language') || 'es';
 
+  // Extraer solo el path, ignorando dominio
+  const url = new URL(param.href);
+  const path = url.pathname.replace(/^\/(es|en)\//, ''); // limpia si ya incluye idioma
+
+  return `/${lang}/${path.replace(/^\/+/, '')}`; // garantiza que no haya doble slash
+}
+
+function getLanguage() {
+  return localStorage.getItem('language') || 'es';
+}
 export {
   setLanguage,
+  applyUrlToButtons,
+  getLanguage
 };
