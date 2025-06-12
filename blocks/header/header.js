@@ -1,40 +1,41 @@
 import { getMetadata } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
+import { getLanguage } from '../../scripts/wolfsellers.js';
 
 // media query match that indicates mobile/tablet width
 const isDesktop = window.matchMedia('(min-width: 900px)');
 
-// function closeOnEscape(e) {
-//   if (e.code === 'Escape') {
-//     const nav = document.getElementById('nav');
-//     const navSections = nav.querySelector('.nav-sections');
-//     const navSectionExpanded = navSections.querySelector('[aria-expanded="true"]');
-//     if (navSectionExpanded && isDesktop.matches) {
-//       // eslint-disable-next-line no-use-before-define
-//       toggleAllNavSections(navSections);
-//       navSectionExpanded.focus();
-//     } else if (!isDesktop.matches) {
-//       // eslint-disable-next-line no-use-before-define
-//       toggleMenu(nav, navSections);
-//       nav.querySelector('button').focus();
-//     }
-//   }
-// }
+function closeOnEscape(e) {
+  if (e.code === 'Escape') {
+    const nav = document.getElementById('nav');
+    const navSections = nav.querySelector('.nav-sections');
+    const navSectionExpanded = navSections.querySelector('[aria-expanded="true"]');
+    if (navSectionExpanded && isDesktop.matches) {
+      // eslint-disable-next-line no-use-before-define
+      toggleAllNavSections(navSections);
+      navSectionExpanded.focus();
+    } else if (!isDesktop.matches) {
+      // eslint-disable-next-line no-use-before-define
+      toggleMenu(nav, navSections);
+      nav.querySelector('button').focus();
+    }
+  }
+}
 
-// function closeOnFocusLost(e) {
-//   const nav = e.currentTarget;
-//   if (!nav.contains(e.relatedTarget)) {
-//     const navSections = nav.querySelector('.nav-sections');
-//     const navSectionExpanded = navSections.querySelector('[aria-expanded="true"]');
-//     if (navSectionExpanded && isDesktop.matches) {
-//       // eslint-disable-next-line no-use-before-define
-//       toggleAllNavSections(navSections, false);
-//     } else if (!isDesktop.matches) {
-//       // eslint-disable-next-line no-use-before-define
-//       toggleMenu(nav, navSections, false);
-//     }
-//   }
-// }
+function closeOnFocusLost(e) {
+  const nav = e.currentTarget;
+  if (!nav.contains(e.relatedTarget)) {
+    const navSections = nav.querySelector('.nav-sections');
+    const navSectionExpanded = navSections.querySelector('[aria-expanded="true"]');
+    if (navSectionExpanded && isDesktop.matches) {
+      // eslint-disable-next-line no-use-before-define
+      toggleAllNavSections(navSections, false);
+    } else if (!isDesktop.matches) {
+      // eslint-disable-next-line no-use-before-define
+      toggleMenu(nav, navSections, false);
+    }
+  }
+}
 
 function openOnKeydown(e) {
   const focused = document.activeElement;
@@ -92,15 +93,15 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
   }
 
   // enable menu collapse on escape keypress
-  // if (!expanded || isDesktop.matches) {
-  //   // collapse menu on escape press
-  //   window.addEventListener('keydown', closeOnEscape);
-  //   // collapse menu on focus lost
-  //   nav.addEventListener('focusout', closeOnFocusLost);
-  // } else {
-  //   window.removeEventListener('keydown', closeOnEscape);
-  //   nav.removeEventListener('focusout', closeOnFocusLost);
-  // }
+  if (isDesktop.matches) {
+    // collapse menu on escape press
+    window.addEventListener('keydown', closeOnEscape);
+    // collapse menu on focus lost
+    nav.addEventListener('focusout', closeOnFocusLost);
+  } else {
+    window.removeEventListener('keydown', closeOnEscape);
+    nav.removeEventListener('focusout', closeOnFocusLost);
+  }
 
 }
 
@@ -110,8 +111,9 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
  */
 export default async function decorate(block) {
   // load nav as fragment
+  const language = getLanguage();
   const navMeta = getMetadata('nav');
-  const navPath = navMeta ? new URL(navMeta, window.location).pathname : '/es/nav';
+  const navPath = navMeta ? new URL(navMeta, window.location).pathname : `/${language}/nav`;
   const fragment = await loadFragment(navPath);
 
   // decorate nav DOM

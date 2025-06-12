@@ -38,6 +38,17 @@
     width: auto;
 }
 
+.snood-header-bottom-container a + a + strong a:after {
+  content: '';
+  display: inline-block;
+  position: static;
+  transform: rotate(45deg);
+  width: var(--size-10);
+  height: var(--size-10);
+  border: 2px solid var(--color-black);
+  border-radius: 0 1px 0 0;
+  border-width: 2px 2px 0 0;
+}
 
 @media (width >= 900px) {
     .snood-header-bottom-container > div {
