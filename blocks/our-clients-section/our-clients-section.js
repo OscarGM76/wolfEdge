@@ -5,8 +5,6 @@ import { render, h } from '@dropins/tools/preact.js';
 
 export default async function decorate(block) {
     try {
-        console.log('block',block);
-        
         const ourClientsSectionWrapper = document.querySelector('main .our-clients-section-wrapper');
         const ourClientsStructure = `
             <div class='ourClientsContainer'>

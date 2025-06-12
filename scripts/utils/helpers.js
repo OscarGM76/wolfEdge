@@ -17,3 +17,14 @@ export function toBase64Image(imgElement) {
     img.src = imgElement.src;
   });
 }
+
+export function loadEmblaScriptEmblaCarousel() {
+  return new Promise((resolve, reject) => {
+    const script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/npm/embla-carousel@8.6.0/embla-carousel.umd.min.js';
+    script.async = true;
+    script.onload = () => resolve(window.EmblaCarousel);
+    script.onerror = () => reject(new Error('No se pudo cargar Embla Carousel'));
+    document.head.appendChild(script);
+  });
+}
