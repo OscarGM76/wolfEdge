@@ -227,6 +227,11 @@
   "resolved" "https://registry.npmjs.org/@dropins/tools/-/tools-1.2.1.tgz"
   "version" "1.2.1"
 
+"@dropins/tools@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.npmjs.org/@dropins/tools/-/tools-1.2.1.tgz"
+  integrity sha512-AckWQjRkxZc6lTm2QoSRtQ7RS8CH6tgPtFdmYLJ59DrblZ7Hi5HwU1B7Halzgk+9Vc+gTkykj068Ibl0zhyJSQ==
+
 "@dual-bundle/import-meta-resolve@^4.1.0":
   "integrity" "sha512-+nxncfwHM5SgAtrVzgpzJOI1ol0PkumhVo469KCf9lUi21IGcY90G98VuHm9VRrUypmAzawAHO9bs6hqeADaVg=="
   "resolved" "https://registry.npmjs.org/@dual-bundle/import-meta-resolve/-/import-meta-resolve-4.1.0.tgz"

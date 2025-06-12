@@ -1,0 +1,118 @@
+
+.titleSliderBannerHome h1 {
+    text-align: right;
+    font-size: 6rem;
+    color: #eaeaea;
+    margin: 80px 0 20px 0;
+    font-weight: 700;
+}
+
+.item-slider-row-titles h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #eaeaea;
+    text-align: left;
+}
+
+.item-slider-row-titles h3{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #4e4d52;
+    height: 70px;
+    text-align: left;
+}
+
+.item-slider-row-text p {
+    text-align: justify;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.item-slider-row-link {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.item-slider-row-link a {
+    text-align: left;
+    color: #ed1c24;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.viewMoreSliderBannerHome {
+    display: flex;
+    justify-content: center;
+}
+
+/* Slider Styles */
+
+.embla {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    margin: auto;
+}
+
+.embla__viewport {
+    overflow: hidden;
+}
+
+.embla__container {
+    display: flex;
+}
+
+.embla__slide {
+    background: #eee;
+    padding: 2rem;
+    text-align: center;
+}
+
+.embla__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: black;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.embla__button--prev {
+    left: 10px;
+}
+
+.embla__button--next {
+    right: 10px;
+}
+
+.embla__dots {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.dot {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 7px;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+}
+
+.dot.is-selected {
+    background-color: #1C1918;
+}
+
+.embla__slide {
+    flex: 0 0 100%;
+    /* default: 1 slide visible */
+}
+
+.hide_items_slider {
+    display: none;
+}
