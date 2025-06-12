@@ -1,0 +1,23 @@
+.about-of-aec-banner.block > div {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+}
+
+.about-of-aec-banner-title-second-col {
+    font-size: 18px;
+}
+
+.about-of-aec-banner-text-second-col {
+    font-size: 17px;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 768px) {
+    .about-of-aec-banner.block > div {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, auto);
+        align-items: center;
+    }
+}
