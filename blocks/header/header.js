@@ -101,6 +101,7 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
   //   window.removeEventListener('keydown', closeOnEscape);
   //   nav.removeEventListener('focusout', closeOnFocusLost);
   // }
+
 }
 
 /**
@@ -147,9 +148,8 @@ export default async function decorate(block) {
     });
     navSections.addEventListener('click', (e) => {
       const expanded = e.target.getAttribute('aria-expanded');
-      if(e.target.classList.contains('nav-drop')) {
+      if (e.target.classList.contains('nav-drop')) {
         e.target.setAttribute('aria-expanded', expanded === 'false' ? 'true' : 'false');
-        console.log(e.target);
       }
     });
   }
@@ -163,7 +163,7 @@ export default async function decorate(block) {
   hamburger.addEventListener('click', () => {
     toggleMenu(nav, navSections);
     navSections.querySelectorAll(':scope .default-content-wrapper > ul > li').forEach((navSection) => {
-      if(navSection.classList.contains('nav-drop')) {
+      if (navSection.classList.contains('nav-drop')) {
         navSection.setAttribute('aria-expanded', 'false');
       }
     });
