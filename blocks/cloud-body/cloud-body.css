@@ -1,0 +1,61 @@
+.cloud-layout {
+	display: grid;
+	grid-template-columns: 1.5fr 1fr;
+}
+
+.cloud-layout.banner h1{
+	color: #ED1C24;
+	line-height: 1;
+	margin: 0;
+}
+.cloud-layout.banner h1:first-child{
+	color: #333537;
+}
+
+.cloud-layout.banner h2 {
+	color: #4E4D52;
+	font-size: 24px;
+	line-height: 1.4;
+	margin: 0;
+}
+
+.cloud-layout.banner h2:first-of-type {
+	margin-top: 40px;
+}
+
+.cloud-layout.banner p {
+	font-size: 17px;
+	margin: 0;
+}
+
+.cloud-test {
+	background: #f7f7f7;
+	padding: 40px;
+}
+
+.cloud-test h2 {
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 1.1;
+	margin: 0;
+}
+
+.cloud-test a.button {
+	color: #4e4d52;
+	background: transparent linear-gradient(90deg, #fff -20%, #dcdce3 101%, #770e12 100%);
+	border: none;
+	box-shadow: 0 10px 10px rgba(0,0,0,0.16);
+	border-radius: 10px;
+	font-weight: bold;
+	margin: 0;
+	padding: 10px;
+	transition: all .5s;
+	width: 250px;
+}
+
+.cloud-test a.button:hover {
+	border: none;
+	background: #fff;
+	box-shadow: 1px 1px 10px #4e4d52;
+	transform: scale(.9, .9);
+}

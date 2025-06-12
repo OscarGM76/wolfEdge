@@ -32,3 +32,8 @@ npm run lint
 1. Install the [AEM CLI](https://github.com/adobe/helix-cli): `npm install -g @adobe/aem-cli`
 1. Start AEM Proxy: `aem up` (opens your browser at `http://localhost:3000`)
 1. Open the `wolfEdge` directory in your favorite IDE and start coding :)
+
+## Project Links
+Original Site: https://wolfsellers.com/
+
+ADOBE XD: https://xd.adobe.com/view/c00b0ead-7939-48c1-b1d5-3e8faf5660f8-9558/
