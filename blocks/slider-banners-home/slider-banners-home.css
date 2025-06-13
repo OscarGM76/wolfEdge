@@ -116,3 +116,9 @@
 .hide_items_slider {
     display: none;
 }
+
+@media only screen and (max-width: 550px) {
+    .titleSliderBannerHome h1 {
+        font-size: 50px;
+    }
+}

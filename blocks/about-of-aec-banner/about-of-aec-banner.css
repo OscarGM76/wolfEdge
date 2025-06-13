@@ -6,11 +6,13 @@
 
 .about-of-aec-banner-title-second-col {
     font-size: 18px;
+    font-family: "Hind", sans-serif;
 }
 
 .about-of-aec-banner-text-second-col {
     font-size: 17px;
     font-weight: 300;
+    font-family: "Hind", sans-serif;
 }
 
 @media only screen and (max-width: 768px) {
