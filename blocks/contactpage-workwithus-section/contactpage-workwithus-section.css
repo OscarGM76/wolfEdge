@@ -1,0 +1,123 @@
+/* Selecciona el bloque completo en wrapper*/
+div[class*='contactpage-workwithus-section-wrapper'] {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    max-width: unset !important;
+    background-image: url('./media_128a11e26c3e1bfed7ee1f647634fa310947ae5a5.png?width=750&format=png&optimize=medium');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    width: 100%;
+  }
+ 
+/* Estilos dl contenedor del bloque*/
+div[class*='contactpage-workwithus-section-wrapper'] [class*='workwithus'] {
+    max-width: 1470px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* formateo de espacios poe defecto*/
+div[class*='contactpage-workwithus-section-wrapper'] [class*='workwithus-title'] p,
+div[class*='contactpage-workwithus-section-wrapper'] [class*='workwithus-body'] [id='classidentifierworkwithus-body'] {
+    display: none;
+}
+
+div[class*='contactpage-workwithus-section-wrapper'] [class*='workwithus-title'] h2 {
+    margin: 0;
+}
+
+/* estilos formato de paddings por defecto*/
+div[class*='contactpage-workwithus-section-wrapper'] [class*='workwithus-title'],
+div[class*='contactpage-workwithus-section-wrapper'] [class*='workwithus-body'],
+div[class*='contactpage-workwithus-section-wrapper'] [class*='workwithus-contact'] ,
+div[class*='contactpage-workwithus-section-wrapper'] [class*='workwithus-bottom'] {
+    padding: 0;
+}
+
+div[class*='contactpage-workwithus-section-wrapper'] [class*='workwithus-title'] [id='trabaja-con-nosotros'] {
+    font-size: 7.5rem !important;
+    color: #eaeaea;
+    font-weight: 700;
+    text-align: right;
+}
+
+/* estilos del texto body*/
+div[class*='contactpage-workwithus-section-wrapper'] [class*='workwithus-body'] {
+    margin-top: 2.5rem;
+    text-align: right;
+    line-height: 1;
+}
+
+div[class*='contactpage-workwithus-section-wrapper'] [class*='workwithus-body'] p{
+  font-size: 3rem;
+  margin: 0;
+}
+
+/* estilos del texto de CV RH*/
+div[class*='contactpage-workwithus-section-wrapper'] [class*='workwithus-contact'] p{
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* link styles*/
+div[class*='contactpage-workwithus-section-wrapper'] [class*='workwithus-contact'] u{
+  color: #ED1C24;
+}
+
+/* bottom text styles*/
+div[class*='contactpage-workwithus-section-wrapper'] [class*='workwithus-bottom'] {
+  margin-top: 9rem;
+  text-align: right;
+}
+
+div[class*='contactpage-workwithus-section-wrapper'] [class*='workwithus-bottom'] p{
+  font-size: 3rem;
+  margin: 0;
+  line-height: 1;
+}
+
+/* Botones */
+div[data-block-name="contactpage-workwithus-section"] .button {
+    display: inline-block;
+    border: none;
+    background: transparent linear-gradient(90deg, #fff -20%, #dcdce3 101%, #770e12 100%);
+    appearance: none;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 0.625rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.16);
+    color: #4e4d52;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.625rem;
+    transition: all .5s;
+    text-align: center;
+    min-width: 15.625rem;
+    max-width: 15.625rem;
+    width: 100%;
+    font-size: 18px;
+}
+
+div[data-block-name="contactpage-workwithus-section"] .button:hover {
+  background: linear-gradient(90deg, #ffffff, #f0f0f0);
+  color: #4e4d52;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+
+    /* estilos para h2 ubicación tab*/
+    div[class*='contactpage-workwithus-section-wrapper'] [class*='workwithus-title'] [id='trabaja-con-nosotros'] {
+        font-size: 2.5rem !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 980px) {
+
+    /* estilos para h2 ubicación mobile*/
+    div[class*='contactpage-workwithus-section-wrapper'] [class*='workwithus-title'] [id='trabaja-con-nosotros'] {
+        font-size: 3.75rem !important;
+    }
+}

@@ -1,0 +1,106 @@
+/* Selecciona el bloque completo en wrapper*/
+div[class*='contactpage-map-section-wrapper'] {
+  max-width: 1470px !important;
+  margin-bottom: 5rem !important;
+}
+
+/* Selecciona el bloque completo */
+div[data-block-name="contactpage-map-section"] {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Estiliza el iframe del mapa */
+div[data-block-name="contactpage-map-section"] iframe {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+div[class*='contactpage-map-section'] [class*="button-container"] {
+  margin: 0;
+  line-height: 0;
+}
+
+/* Botones */
+div[data-block-name="contactpage-map-section"] .button {
+  appearance: none;
+  background-color: #000000;
+  border: 1px solid #ED1C24;
+  border-radius: 0.625rem;
+  color: #ED1C24;
+  cursor: pointer;
+  display: flex;
+  font-size: 1rem;
+  height: 3.25rem;
+  justify-content: center;
+  margin: 0;
+  max-width: 17.5rem;
+  padding: 0.625rem;
+  text-align: center;
+  user-select: none;
+  width: 100%;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* formateo de estilos por defecto de edge */
+div[class*='mapa-info'] p, h3, h4{
+  line-height: 1.25;
+  margin: 0;
+}
+
+/* Info del mapa section*/
+div[data-block-name="contactpage-map-section"] .mapa-info {
+  background-color: #000000;
+  padding: 3.25rem;
+  color: #fff;
+}
+
+/* titulo de seccion Oficinas de Desarrollo*/
+div[class*='mapa-info'] [id='oficinas-de-desarrollo']{
+  font-size: 2rem;
+  font-weight: normal !important;
+  margin-bottom: 2rem;
+}
+
+/* texto de direccion*/
+div[class*='mapa-info'] [id='calle-río-tiber-53-piso-3'],
+div[class*='mapa-info'] [id='cuauhtémoc'],
+div[class*='mapa-info'] [id='cdmx-cp-06500'],
+div[class*='mapa-info'] [id='teléfono-52-55-6819-1500hiwolfsellerscom']
+{
+  font-size: 1.125rem;
+  font-weight: normal !important;
+}
+
+div[class*='mapa-info'] a{
+  color: #fff;
+}
+
+/* tabla de redes sociales*/
+div[data-block-name="contactpage-map-section"] table{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  max-width: 17.5rem;
+  width: 100%;
+}
+
+div[data-block-name="contactpage-map-section"] tr{
+  display: flex;
+  justify-content: space-between;
+}
+
+div[data-block-name="contactpage-map-section"] td{
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 0.25rem;
+  font-size: 1.125rem;
+}
+
+/* mobile styles */
+@media (max-width: 900px) {
+  div[data-block-name="contactpage-map-section"] {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

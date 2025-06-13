@@ -1,0 +1,35 @@
+/* Selecciona el bloque completo en wrapper*/
+div[class*='contactpage-title-section-wrapper'] {
+    max-width: 1470px !important;
+}
+
+/* estilos para h2 ubicación desk*/
+div[class*='location-title'] [id="ubicación"]{
+    font-size: 7.5rem !important;
+    color: #eaeaea;
+    margin: 80px 0 20px 0;
+    font-weight: 700;
+}
+
+/* espacio formateado para p*/
+div[class*='location-title'] p {
+    margin: 0;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+
+    /* estilos para h2 ubicación tab*/
+    div[class*='location-title'] [id="ubicación"] {
+        font-size: 2.5rem !important;
+        margin: 40px 0;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 980px) {
+
+    /* estilos para h2 ubicación mobile*/
+    div[class*='location-title'] [id='ubicación'] {
+        font-size: 3.75rem !important;
+        margin: 80px 0 20px 0;
+    }
+}
