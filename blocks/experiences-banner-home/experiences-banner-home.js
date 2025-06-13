@@ -31,8 +31,6 @@ export default function decorate() {
         const newContainer = document.createElement('div');
         const linkHref = link?.getAttribute('href');
         const linkText = link?.innerHTML;
-        console.log('linkHref',linkHref);
-        
         link.parentElement.replaceChildren(newContainer);
         render(h(ViewMoreButton, {
           text: linkText,

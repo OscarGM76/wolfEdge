@@ -5,8 +5,6 @@ const html = htm.bind(h);
 
 const ViewMoreButton = (props) => {
   const { text, href = '#' } = props || {};
-  console.log('href_', href);
-  
   return html`
     <div class="viewMoreContainerButton">
           <a href=${href}>
