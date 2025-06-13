@@ -1,5 +1,5 @@
 /* eslint-disable indent */
-import Slider from '../../scripts/@wolfsellers/Slider/slider.js';
+import Slider from '../Slider/slider.js';
 import { render, h } from '@dropins/tools/preact.js';
 import htm from 'htm';
 
