@@ -1,0 +1,21 @@
+.socialLinsList {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.socialLinsList div {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #000;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.socialLinsList div img {
+    max-width: 100%;
+    max-height: 100%;
+}

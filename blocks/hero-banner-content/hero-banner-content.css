@@ -1,19 +1,29 @@
-div.hero-banner-content > div{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
 div.hero-banner-content > div div.hero-banner-content-text {
   max-width: 41%;
   font-family: "Hind", sans-serif;
 }
 
 div.hero-banner-content > div div.hero-banner-content-text h1 {
-  font-size: 70px;
+  font-size: 60px;
   font-family: "Hind", sans-serif;
+  font-weight: 300;
+  margin: 0;
 }
 
 div.hero-banner-content > div div.hero-banner-content-text h1 strong {
   color: #ed1c24;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 970px) {
+  div.hero-banner-content > div div.hero-banner-content-text h1 {
+    font-size: 50px;
+    margin: 0;
+  } 
+}
+
+@media only screen and (max-width: 768px) {
+  div.hero-banner-content > div div.hero-banner-content-text h1 {
+    font-size: 30px;
+  } 
 }
