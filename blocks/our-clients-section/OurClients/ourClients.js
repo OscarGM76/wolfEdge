@@ -1,7 +1,7 @@
 import { h } from '@dropins/tools/preact.js';
 import { useState, useMemo } from '@dropins/tools/preact-hooks.js';
 import htm from 'htm';
-import ViewMoreButton from '../ViewMoreButton/viewMoreButton.js';
+import ViewMoreButton from '../../ViewMoreButton/viewMoreButton.js';
 
 const html = htm.bind(h);
 
@@ -41,7 +41,7 @@ const OurClients = (props) => {
                 </button>`)}
       </div>
       <div class='ourClientsViewMoreButton'>
-        ${(ViewMoreButton && currentTypeClient === 'all') && html`${ViewMoreButton({ text: 'Ver Todos Los Servicios' })}`}
+        ${(ViewMoreButton && currentTypeClient === 'all') && html`${ViewMoreButton({ text: 'Ver Todos Los Servicios', href: '/es/portafolio' })}`}
       </div>
     </div>
   `;

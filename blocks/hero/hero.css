@@ -23,3 +23,37 @@
     width: 3rem;
     height: 3rem;
 }
+
+.heroBannerContainer {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.heroBannerFirstColumnText {
+    margin-top: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .heroBannerContainer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .heroBannerFirstColumn {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hero > div div.picture-hero {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .hero > div div.text-hero p {
+        margin: 0;
+        font-family: "Hind", sans-serif;
+        font-size: 22px;
+    }
+
+  }
