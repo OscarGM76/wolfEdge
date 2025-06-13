@@ -1,0 +1,4 @@
+/* estilos para h2 ubicación desk*/
+div[class*='contactpage-workwithus-background'] div > div > picture > img{
+    display: none;
+}
