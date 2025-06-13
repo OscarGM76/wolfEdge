@@ -1,0 +1,15 @@
+.sliderImagesContainerHome {
+    background-color: #fff;
+}
+
+.sliderImagesContainerHome .embla__dots {
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+    .sliderImagesContainerHome .embla__dots {
+        position: static;
+    }
+}
