@@ -6,10 +6,12 @@ div.hero-banner-content > div{
 
 div.hero-banner-content > div div.hero-banner-content-text {
   max-width: 41%;
+  font-family: "Hind", sans-serif;
 }
 
 div.hero-banner-content > div div.hero-banner-content-text h1 {
   font-size: 70px;
+  font-family: "Hind", sans-serif;
 }
 
 div.hero-banner-content > div div.hero-banner-content-text h1 strong {

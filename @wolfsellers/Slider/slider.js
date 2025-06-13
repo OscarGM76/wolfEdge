@@ -7,20 +7,21 @@ import useWindowSize from '../../scripts/hooks/useWindowsSize.js';
 const html = htm.bind(h);
 
 const Slider = (props) => {
-  const { items, showRows, showDots, breakpoints } = props;
+  const {
+    items,
+    showArrows: showArrowsInitialValue,
+    showDots: showDotsInitialValue,
+    breakpoints = {},
+  } = props;
   const emblaRef = useRef(null);
   const prevBtnRef = useRef(null);
   const nextBtnRef = useRef(null);
   const dotsWrapperRef = useRef(null);
   const [emblaInstanceRef, setEmblaInstanceRef] = useState(null);
   const [currentSlidesToScroll, setSlidesToScroll] = useState(1);
-
+  const [showDots, setshowDots] = useState(showDotsInitialValue);
+  const [showArrows, setshowArrows] = useState(showArrowsInitialValue);
   const { size } = useWindowSize();
-
-  const showDotsAndArrows = useMemo(() => {
-    if (size.width >= 1024) return false;
-    return true;
-  }, [size]);
 
   const options = useMemo(() => {
     const configurableOptions = {
@@ -37,7 +38,7 @@ const Slider = (props) => {
       configurableOptions.breakpoints = breakpoints;
     }
     return configurableOptions;
-  }, [breakpoints, emblaRef]);
+  }, [emblaRef]);
 
   const getBreakPointSize = (breakpoint) => {
     const match = breakpoint.match(/\(min-width:\s*(\d+)px\)/);
@@ -64,11 +65,15 @@ const Slider = (props) => {
       slideElements.forEach((slide) => {
         slide.style.flex = `0 0 ${flexBasis}%`;
       });
+      setshowDots(selected?.dots);
       setSlidesToScroll(selected.slidesToScroll);
+      setshowArrows(selected?.arrows);
     } else {
       slideElements.forEach((slide) => {
         slide.style.flex = '0 0 100%';
       });
+      setshowDots(showDotsInitialValue);
+      setshowArrows(showArrowsInitialValue);
       setSlidesToScroll(1);
     }
   }, [emblaRef.current, size, options]);
@@ -122,9 +127,9 @@ const Slider = (props) => {
         ${items.map((item) => html`<div class="embla__slide">${item}</div>`)}
         </div>
     </div>
-    <button ref=${prevBtnRef} class=${`embla__button embla__button--prev ${showDotsAndArrows && showRows ? '' : 'hide_items_slider'}`}>‹</button>
-    <button ref=${nextBtnRef} class=${`embla__button embla__button--next ${showDotsAndArrows && showRows ? '' : 'hide_items_slider'}`}>›</button>
-    <div ref=${dotsWrapperRef} class=${`embla__dots ${showDotsAndArrows && showDots ? '' : 'hide_items_slider'}`}></div>
+    <button ref=${prevBtnRef} class=${`embla__button embla__button--prev ${showArrows ? '' : 'hide_items_slider'}`}>‹</button>
+    <button ref=${nextBtnRef} class=${`embla__button embla__button--next ${showArrows ? '' : 'hide_items_slider'}`}>›</button>
+    <div ref=${dotsWrapperRef} class=${`embla__dots ${showDots ? '' : 'hide_items_slider'}`}></div>
     </div>
     `;
 };

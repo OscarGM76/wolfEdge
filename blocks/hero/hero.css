@@ -11,10 +11,12 @@
     padding: 0 1rem;
     border-bottom-right-radius: 10px;
     font-size: 2rem;
+    font-family: "Hind", sans-serif;
 }
 
 .hero > div div.text-hero p {
     margin: 0;
+    font-family: "Hind", sans-serif;
 }
 
 .hero > div div.picture-hero {

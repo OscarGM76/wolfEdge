@@ -69,6 +69,14 @@ export default async function decorate(block) {
             items: sliderItems,
             showRows: false,
             showDots: true,
+            breakpoints: {
+              '(min-width: 1024px)': { 
+                loop: false, active: false, slidesToScroll: 4, dots: false, arrows: false,
+              },
+              '(min-width: 768px)': {
+                loop: true, active: true, slidesToScroll: 3, dots: true, arrows: false,
+              },
+            },
         }), contentSliderBannerHome);
     } catch (error) {
         console.log('error', error);
