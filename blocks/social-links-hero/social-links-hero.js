@@ -1,4 +1,4 @@
-import SocialLinks from '../../@wolfsellers/SocialLinks/socialLinks.js';
+import SocialLinks from './SocialLinks/socialLinks.js';
 import { render, h } from '@dropins/tools/preact.js';
 import htm from 'htm';
 
