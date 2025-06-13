@@ -1,8 +1,8 @@
 import { h } from '@dropins/tools/preact.js';
 import { useEffect, useMemo, useRef, useState } from '@dropins/tools/preact-hooks.js';
 import htm from 'htm';
-import { loadEmblaScriptEmblaCarousel } from '../../scripts/utils/helpers.js';
-import useWindowSize from '../../scripts/hooks/useWindowsSize.js';
+import { loadEmblaScriptEmblaCarousel } from '../../utils/helpers.js';
+import useWindowSize from '../../hooks/useWindowsSize.js';
 
 const html = htm.bind(h);
 

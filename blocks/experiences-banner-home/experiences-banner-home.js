@@ -1,4 +1,4 @@
-import ViewMoreButton from '../../@wolfsellers/ViewMoreButton/viewMoreButton.js';
+import ViewMoreButton from '../../scripts/@wolfsellers/ViewMoreButton/viewMoreButton.js';
 import { render, h } from '@dropins/tools/preact.js';
 
 export default function decorate() {

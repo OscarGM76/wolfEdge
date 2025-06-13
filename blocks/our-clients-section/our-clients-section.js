@@ -1,6 +1,6 @@
 /* eslint-disable indent */
 import { toBase64Image } from '../../scripts/utils/helpers.js';
-import OurClients from '../../@wolfsellers/OurClients/ourClients.js';
+import OurClients from '../../scripts/@wolfsellers/OurClients/ourClients.js';
 import { render, h } from '@dropins/tools/preact.js';
 
 export default async function decorate(block) {
