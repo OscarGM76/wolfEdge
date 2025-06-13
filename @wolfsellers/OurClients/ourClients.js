@@ -41,7 +41,7 @@ const OurClients = (props) => {
                 </button>`)}
       </div>
       <div class='ourClientsViewMoreButton'>
-        ${(ViewMoreButton && currentTypeClient === 'all') && html`${ViewMoreButton({ text: 'Ver Todos Los Servicios' })}`}
+        ${(ViewMoreButton && currentTypeClient === 'all') && html`${ViewMoreButton({ text: 'Ver Todos Los Servicios', href: '/es/portafolio' })}`}
       </div>
     </div>
   `;

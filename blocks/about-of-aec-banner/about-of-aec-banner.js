@@ -27,6 +27,7 @@ export default function decorate() {
         link.parentElement.replaceChildren(newContainer);
         render(h(ViewMoreButton, {
           text: linkText,
+          href: linkHref,
         }), newContainer);
       }
     });

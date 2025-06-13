@@ -4,12 +4,16 @@ import htm from 'htm';
 const html = htm.bind(h);
 
 const ViewMoreButton = (props) => {
-  const { text } = props || {};
+  const { text, href = '#' } = props || {};
+  console.log('href_', href);
+  
   return html`
     <div class="viewMoreContainerButton">
-        <button class="viewMoreButton">
-        ${text || ''}
-        </button>
+          <a href=${href}>
+            <button class="viewMoreButton">
+            ${text || ''}
+            </button>
+          </a>
     </div>
   `;
 };

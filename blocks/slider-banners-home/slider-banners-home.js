@@ -27,9 +27,11 @@ export default async function decorate(block) {
         const sectionTitle = block.querySelector('div.slider-banners-home.block h1');
         const links = block.querySelectorAll('div.slider-banners-home.block a');
         const viewMoreButton = links[links.length - 1];
+        const href = viewMoreButton.getAttribute('href');
         titleSliderBannerHome.append(sectionTitle);
         render(h(ViewMoreButton, {
             text: viewMoreButton?.innerHTML,
+            href,
         }), viewMoreSliderBannerHome);
         Array.from(sliderBannersHome).slice(1, sliderBannersHome.length - 1).forEach((element) => {
             const picture = element.querySelector('picture');
