@@ -1,3 +1,6 @@
+@import "./adobe-analytics.css";
+@import "./magento-open-source.css";
+
 .columns > div {
   display: flex;
   flex-direction: column;
@@ -30,47 +33,4 @@
     flex: 1;
     order: unset;
   }
-}
-
-/* MAGENTO OPEN SOURCE */
-.columns.magento-open-source > div > div {
-	flex: unset;
-}
-
-.columns.magento-open-source > div > div:nth-child(1) {
-	width: 40%;
-}
-
-.columns.magento-open-source > div > div:nth-child(2) {
-	width: 60%;
-}
-
-.columns.magento-open-source h1 {
-	font-size: 40px;
-	line-height: 1.1;
-	margin: 0;
-}
-
-.columns.magento-open-source h2 {
-	font-size: 24px;
-	font-weight: normal;
-	line-height: 1.4;
-	margin: 40px 0 0;
-}
-
-.columns.magento-open-source p {
-	font-size: 17px;
-	line-height: 1.4;
-	margin: 0;
-	text-align: justify;
-}
-
-.columns.magento-open-source-list li {
-	color: #333537;
-	font-size: 17px;
-	list-style: disc inside;
-}
-
-.columns.magento-open-source-list li::marker {
-	color: #ff6600;
 }
