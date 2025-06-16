@@ -1,4 +1,4 @@
-import ViewMoreButton from '../../@wolfsellers/ViewMoreButton/viewMoreButton.js';
+import ViewMoreButton from '../ViewMoreButton/viewMoreButton.js';
 import { render, h } from '@dropins/tools/preact.js';
 
 export default function decorate() {
@@ -27,6 +27,7 @@ export default function decorate() {
         link.parentElement.replaceChildren(newContainer);
         render(h(ViewMoreButton, {
           text: linkText,
+          href: linkHref,
         }), newContainer);
       }
     });
