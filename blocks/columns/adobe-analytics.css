@@ -1,0 +1,121 @@
+/* BANNER */
+.columns.adobe-analytics-banner {
+	margin-bottom: 40px;
+}
+
+.columns.adobe-analytics-banner > div:first-child > div:nth-child(1){
+	background: #4e4d52;
+	border-radius: 20px;
+	color: #FFFFFF;
+	padding: 80px 32px;
+}
+
+.columns.adobe-analytics-banner > div:first-child > div:nth-child(1) img{
+	width: 182px;
+}
+
+.columns.adobe-analytics-banner > div:last-child > div:nth-child(1) picture{
+	display: block;
+	margin-left: auto;
+	width: 340px;
+}
+
+.columns.adobe-analytics-banner h1{
+	font-size: 40px;
+	line-height: 1.1;
+	margin: 0;
+}
+
+.columns.adobe-analytics-banner h2{
+	font-size: 30px;
+	font-weight: normal;
+	line-height: 1.4;
+	margin: 40px 0 0;
+}
+
+.columns.adobe-analytics-banner p {
+	font-size: 17px;
+	line-height: 1.4;
+	margin: 0;
+	text-align: justify;
+}
+
+/* DESCRIPTION */
+.columns.adobe-analytics-desc > div {
+	gap: 100px;
+}
+
+.columns.adobe-analytics-desc > div > div picture{
+	display: block;
+	margin-left: auto;
+	width: 426px;
+}
+
+.columns.adobe-analytics-desc > div > div:first-child h3{
+	color: #4e4d52;
+	font-size: 26px;
+	margin: 0;
+	text-align: right;
+}
+
+.columns.adobe-analytics-desc a {
+	color: #4e4d52;
+	background: transparent linear-gradient(90deg, #fff -20%, #dcdce3 101%, #770e12 100%);
+	border: none;
+	box-shadow: 0 10px 10px rgba(0,0,0,0.16);
+	border-radius: 10px;
+	display: inline-block;
+	font-weight: bold;
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+	transition: all .5s;
+	width: 250px;
+}
+
+.columns.adobe-analytics-desc a:hover {
+	border: none;
+	background: #fff;
+	box-shadow: 1px 1px 10px #4e4d52;
+	transform: scale(.9, .9);
+}
+
+/* PRODUCTS */
+.columns.adobe-analytics-products .columns-img-col picture{
+	display: block;
+	max-width: 540px;
+}
+
+.columns.adobe-analytics-products h2{
+	color: #EAEAEA;
+	font-size: 100px;
+	font-weight: 700;
+	margin: 80px 0 20px 0;
+	text-align: right;
+}
+
+.columns.adobe-analytics-products p{
+	text-align: right;
+}
+
+.columns.adobe-analytics-products a {
+	color: #4e4d52;
+	background: transparent linear-gradient(90deg, #fff -20%, #dcdce3 101%, #770e12 100%);
+	border: none;
+	box-shadow: 0 10px 10px rgba(0,0,0,0.16);
+	border-radius: 10px;
+	display: inline-block;
+	font-weight: bold;
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+	transition: all .5s;
+	width: 250px;
+}
+
+.columns.adobe-analytics-products a:hover {
+	border: none;
+	background: #fff;
+	box-shadow: 1px 1px 10px #4e4d52;
+	transform: scale(.9, .9);
+}
