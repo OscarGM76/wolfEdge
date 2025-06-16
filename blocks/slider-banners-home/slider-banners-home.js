@@ -1,6 +1,6 @@
 /* eslint-disable indent */
-import Slider from '../../@wolfsellers/Slider/slider.js';
-import ViewMoreButton from '../../@wolfsellers/ViewMoreButton/viewMoreButton.js';
+import Slider from '../Slider/slider.js';
+import ViewMoreButton from '../ViewMoreButton/viewMoreButton.js';
 import { render, h } from '@dropins/tools/preact.js';
 import htm from 'htm';
 
@@ -27,9 +27,11 @@ export default async function decorate(block) {
         const sectionTitle = block.querySelector('div.slider-banners-home.block h1');
         const links = block.querySelectorAll('div.slider-banners-home.block a');
         const viewMoreButton = links[links.length - 1];
+        const href = viewMoreButton.getAttribute('href');
         titleSliderBannerHome.append(sectionTitle);
         render(h(ViewMoreButton, {
             text: viewMoreButton?.innerHTML,
+            href,
         }), viewMoreSliderBannerHome);
         Array.from(sliderBannersHome).slice(1, sliderBannersHome.length - 1).forEach((element) => {
             const picture = element.querySelector('picture');
