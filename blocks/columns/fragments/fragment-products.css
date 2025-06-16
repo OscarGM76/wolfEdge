@@ -1,0 +1,38 @@
+.columns.fragment-products .columns-img-col picture{
+	display: block;
+	max-width: 540px;
+}
+
+.columns.fragment-products h2{
+	color: #EAEAEA;
+	font-size: 100px;
+	font-weight: 700;
+	margin: 80px 0 20px 0;
+	text-align: right;
+}
+
+.columns.fragment-products p{
+	text-align: right;
+}
+
+.columns.fragment-products a {
+	color: #4e4d52;
+	background: transparent linear-gradient(90deg, #fff -20%, #dcdce3 101%, #770e12 100%);
+	border: none;
+	box-shadow: 0 10px 10px rgba(0,0,0,0.16);
+	border-radius: 10px;
+	display: inline-block;
+	font-weight: bold;
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+	transition: all .5s;
+	width: 250px;
+}
+
+.columns.fragment-products a:hover {
+	border: none;
+	background: #fff;
+	box-shadow: 1px 1px 10px #4e4d52;
+	transform: scale(.9, .9);
+}
