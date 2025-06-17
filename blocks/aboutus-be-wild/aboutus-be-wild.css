@@ -1,0 +1,398 @@
+.aboutus-head-wrapper,
+.aboutus-be-wild-wrapper,
+.aboutus-be-wolf-wrapper,
+.aboutus-servicios-wrapper,
+.aboutus-contacto-wrapper {
+    padding: 0 !important;
+}
+
+.aboutus-head-container {
+    margin: 0 !important;
+}
+
+.aboutus-head-container p,
+.aboutus-be-wild-container p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.42857143;
+    text-rendering: optimizeLegibility;
+    word-wrap: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.aboutus-head-wrapper {
+    max-width: none !important;
+}
+
+.aboutus-head {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.aboutus-head .rowClass_1 {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.aboutus-head .rowClass_1 img {
+    width: 100%;
+    height: 100%;
+    min-height: 680px;
+    max-height: 680px;
+
+    object-fit: cover;
+}
+
+.aboutus-head .rowClass_2 {
+    position: relative;
+    top: 0;
+
+    display: flex;
+    justify-content: flex-start;
+
+    max-width: 1400px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 6rem;
+    margin: 0 auto;
+
+    z-index: 0;
+}
+
+.aboutus-head .rowClass_2 .columnClass_1 {
+    width: 100%;
+    max-width: 100%;
+}
+
+.aboutus-head .rowClass_2 .columnClass_1 h1 {
+    font-size: 1.75rem;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.aboutus-head .rowClass_2 .columnClass_1 p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.42857143;
+    text-rendering: optimizeLegibility;
+    word-wrap: normal;
+    margin: 0;
+    margin-bottom: 2rem;
+    padding: 0;
+}
+
+.aboutus-head .rowClass_2 .columnClass_1 h3 {
+    font-size: 52px;
+    font-weight: 300;
+    line-height: 56px;
+    word-wrap: normal;
+    text-rendering: optimizeLegibility;
+    margin: 0;
+    padding: 0;
+}
+
+.aboutus-head .rowClass_2 .columnClass_1 h3 strong {
+    color: #ed1c24;
+}
+
+/**************************** ABOUT-US - SECTION ****************************/
+
+.aboutus-be-wild-container {
+    position: relative;
+    padding: 0 1rem;
+    margin-bottom: 0 !important;
+    color: #333537;
+    font-family: "Hind", sans-serif;
+}
+
+/**************************** ABOUT-US - Be Wild ****************************/
+
+.aboutus-be-wild {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.aboutus-be-wild .rowClass_1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: 1 / 12 span;
+    column-gap: 1.5rem;
+}
+
+/**************************** Be Wild - Column 1 ****************************/
+
+.aboutus-be-wild .rowClass_1 .columnClass_1 {
+    grid-row: 1 / 4;
+    width: 100%;
+}
+
+.aboutus-be-wild .rowClass_1 .columnClass_1 img {
+    object-fit: contain;
+    width: 100%;
+}
+
+/**************************** Be Wild - Column 2 ****************************/
+
+.aboutus-be-wild .rowClass_1 .columnClass_2 {
+    width: 100%;
+}
+
+.aboutus-be-wild .rowClass_1 .columnClass_2 p,
+.aboutus-be-wild .rowClass_1 .columnClass_2 h1 {
+    margin: 0;
+}
+
+.aboutus-be-wild .rowClass_1 .columnClass_2 p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.42857143;
+    text-rendering: optimizeLegibility;
+    word-wrap: normal;
+    margin: 0;
+    margin-bottom: 2rem;
+    padding: 0;
+}
+
+.aboutus-be-wild .rowClass_1 .columnClass_2 h1 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.1;
+    word-wrap: break-word;
+    margin: 0;
+    margin-bottom: 1.75rem;
+}
+
+/**************************** Be Wild - Column 3 ****************************/
+
+.aboutus-be-wild .rowClass_1 .columnClass_3 img {
+    object-fit: contain;
+    max-width: 150px;
+}
+
+/**************************** Be Wild - Column 4 ****************************/
+
+.aboutus-be-wild .rowClass_1 .columnClass_4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.aboutus-be-wild .rowClass_1 .columnClass_4 > p {
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.aboutus-be-wild .rowClass_1 .columnClass_4 > p > strong {
+    color: #f35b1e;
+}
+
+/**************************** ABOUT-US - Be Wolf ****************************/
+
+.aboutus-be-wolf p,
+.aboutus-be-wolf h2 {
+    margin: 0;
+}
+
+.aboutus-be-wolf .rowClass_1 .columnClass_1 {
+    text-align: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 25px 1rem;
+    border-radius: 1.25rem;
+    color: white;
+    background-color: #4e4d52;
+}
+
+.aboutus-be-wolf .rowClass_1 .columnClass_1 p {
+    font-size: 18px;
+}
+
+/**************************** ABOUT-US - Servicios ****************************/
+
+.aboutus-servicios-wrapper {
+    margin: 0 !important;
+    width: 100%;
+    max-width: none !important;
+}
+
+.aboutus-servicios {
+    margin: 1.25rem 0;
+    margin-bottom: 10rem;
+}
+
+.aboutus-servicios .rowClass_1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: flex-end;
+    grid-column: 1 / 12 span;
+    column-gap: 1.5rem;
+}
+
+.aboutus-servicios .rowClass_1 .columnClass_2 {
+    position: relative;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+
+    align-self: flex-end;
+}
+
+.aboutus-servicios .rowClass_1 .columnClass_2 h2 {
+    font-size: 4rem;
+    line-height: 111px;
+    color: #eaeaea;
+    margin: 0;
+}
+
+.aboutus-servicios .rowClass_1 .columnClass_2 h1 {
+    font-size: 18px;
+}
+
+/**************************** ABOUT-US - Contacto ****************************/
+
+.aboutus-contacto .rowClass_1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    grid-column: 1 / 12 span;
+    column-gap: 1.5rem;
+}
+
+.aboutus-contacto .rowClass_1 .columnClass_2 {
+    margin-bottom: 3rem;
+}
+
+.aboutus-contacto .rowClass_1 .columnClass_2 h4 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    letter-spacing: 0;
+    margin: 0;
+    color: #4e4d52;
+}
+
+.aboutus-contacto .rowClass_1 .columnClass_2 p {
+    margin: 0;
+    justify-self: center;
+}
+
+/**************************** ABOUT-US - BG Img ****************************/
+
+.aboutus-bg-img-wrapper {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100%;
+    max-width: none !important;
+    z-index: -1;
+}
+
+.aboutus-bg-img img {
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    object-fit: cover;
+}
+
+@media (width >= 480px) {
+    .aboutus-be-wild .rowClass_1 .columnClass_4 {
+        grid-template-columns: 7fr 5fr;
+    }
+
+    .aboutus-servicios .rowClass_1 .columnClass_2 {
+        align-items: flex-end;
+    }
+
+    .aboutus-contacto .rowClass_1 {
+        align-items: flex-end;
+        grid-template-columns: auto 60%;
+    }
+
+    .aboutus-contacto .rowClass_1 .columnClass_2 p {
+        justify-self: auto;
+    }
+}
+
+@media (width >= 768px) {
+    .aboutus-head .rowClass_2 {
+        padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .aboutus-head .rowClass_2 .columnClass_1 {
+        max-width: 50%;
+    }
+
+    .aboutus-head .rowClass_2 .columnClass_1 h1 {
+        font-size: 2.75rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .aboutus-be-wild .rowClass_1 {
+        grid-template-columns: auto 55%;
+    }
+
+    .aboutus-be-wild .rowClass_1 .columnClass_2 h1 {
+        font-size: 2.75rem;
+        font-weight: 600;
+        margin-bottom: 5rem;
+    }
+
+    .aboutus-be-wild .rowClass_1 .columnClass_3 img {
+        max-width: 326px;
+        margin-top: 4rem;
+    }
+
+    .aboutus-be-wild .rowClass_1 .columnClass_4 {
+        row-gap: 0.3rem;
+    }
+
+    .aboutus-servicios {
+        margin-bottom: 32rem;
+    }
+
+    .aboutus-servicios .rowClass_1 {
+        grid-template-columns: auto 48%;
+    }
+
+    .aboutus-servicios .rowClass_1 .columnClass_2 {
+        right: 3rem;
+    }
+
+    .aboutus-servicios .rowClass_1 .columnClass_2 h2 {
+        font-size: 5rem;
+    }
+
+    .aboutus-contacto .rowClass_1 {
+        grid-template-columns: auto 48%;
+    }
+
+    .aboutus-contacto .rowClass_1 .columnClass_2 h4 {
+        font-size: 2rem;
+        line-height: 56px;
+    }
+}
+
+@media (width >= 1280px) {
+    .aboutus-servicios .rowClass_1 .columnClass_2 {
+        right: 15rem;
+    }
+
+    .aboutus-servicios .rowClass_1 .columnClass_2 h2 {
+        font-size: 7rem;
+    }
+}
