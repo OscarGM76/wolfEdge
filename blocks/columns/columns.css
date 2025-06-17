@@ -1,3 +1,7 @@
+@import "./fragments/fragment-products.css";
+@import "./adobe-analytics.css";
+@import "./magento-open-source.css";
+
 .columns > div {
   display: flex;
   flex-direction: column;

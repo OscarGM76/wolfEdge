@@ -3,6 +3,7 @@ import { useEffect, useMemo, useRef, useState } from '@dropins/tools/preact-hook
 import htm from 'htm';
 import { loadEmblaScriptEmblaCarousel } from '../../scripts/utils/helpers.js';
 import useWindowSize from '../../scripts/hooks/useWindowsSize.js';
+import { ChevronLeftIcon, ChevronRigthIcon } from '../icons/icons.js';
 
 const html = htm.bind(h);
 
@@ -30,10 +31,7 @@ const Slider = (props) => {
       breakpoints,
     };
     if (!breakpoints) {
-      configurableOptions.breakpoints = {
-        '(min-width: 1024px)': { loop: false, active: false, slidesToScroll: 4 },
-        '(min-width: 768px)': { loop: true, active: true, slidesToScroll: 3 },
-      };
+      configurableOptions.breakpoints = undefined;
     } else {
       configurableOptions.breakpoints = breakpoints;
     }
@@ -72,6 +70,8 @@ const Slider = (props) => {
       slideElements.forEach((slide) => {
         slide.style.flex = '0 0 100%';
       });
+      console.log('showArrowsInitialValue',showArrowsInitialValue);
+      
       setshowDots(showDotsInitialValue);
       setshowArrows(showArrowsInitialValue);
       setSlidesToScroll(1);
@@ -119,6 +119,7 @@ const Slider = (props) => {
       }
     });
   }, [emblaRef, options]);
+console.log('showArrows',showArrows);
 
   return html`
     <div class="embla">
@@ -127,8 +128,18 @@ const Slider = (props) => {
         ${items.map((item) => html`<div class="embla__slide">${item}</div>`)}
         </div>
     </div>
-    <button ref=${prevBtnRef} class=${`embla__button embla__button--prev ${showArrows ? '' : 'hide_items_slider'}`}>‹</button>
-    <button ref=${nextBtnRef} class=${`embla__button embla__button--next ${showArrows ? '' : 'hide_items_slider'}`}>›</button>
+    <button
+      ref=${prevBtnRef}
+      class=${`embla__button embla__button--prev ${showArrows ? '' : 'hide_items_slider'}`}
+    >
+      ${html`<${ChevronLeftIcon} class='pruebaIcon' />`}
+    </button>
+    <button 
+      ref=${nextBtnRef} 
+      class=${`embla__button embla__button--next ${showArrows ? '' : 'hide_items_slider'}`}
+    >
+      ${html`<${ChevronRigthIcon} class='pruebaIcon' />`}
+    </button>
     <div ref=${dotsWrapperRef} class=${`embla__dots ${showDots ? '' : 'hide_items_slider'}`}></div>
     </div>
     `;

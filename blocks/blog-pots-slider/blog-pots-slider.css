@@ -8,7 +8,7 @@
     font-family: "Hind", sans-serif;
 }
 
-.item-slider-row-titles h2{
+.item-blog-slider-row-titles h2{
     font-size: 3rem;
     font-weight: 700;
     color: #eaeaea;
@@ -16,7 +16,7 @@
     font-family: "Hind", sans-serif;
 }
 
-.item-slider-row-titles h3{
+.item-blog-slider-row-titles h3{
     font-size: 1.8rem;
     font-weight: bold;
     color: #4e4d52;
@@ -25,7 +25,7 @@
     font-family: "Hind", sans-serif;
 }
 
-.item-slider-row-text p {
+.item-blog-slider-row-text p {
     text-align: justify;
     font-size: 1rem;
     font-weight: 300;
@@ -33,18 +33,22 @@
     font-family: "Hind", sans-serif;
 }
 
-.item-slider-row-link {
+.item-blog-slider-row-link {
     display: flex;
     justify-content: flex-start;
     width: 100%;
 }
 
-.item-slider-row-link a {
+.item-blog-slider-row-link a {
     text-align: left;
-    color: #ed1c24;
-    font-size: 17px;
-    font-weight: 300;
+    font-size: 14px;
+    font-weight: 700;
     font-family: "Hind", sans-serif;
+    color: #333;
+}
+
+.item-blog-slider-row-link a:hover {
+    color: #ed1c24;
 }
 
 .viewMoreSliderBannerHome {
