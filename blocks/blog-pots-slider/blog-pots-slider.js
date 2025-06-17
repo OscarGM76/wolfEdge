@@ -16,16 +16,16 @@ const structure = `
 
 export default async function decorate(block) {
     try {
-        const sliderBannerHomeWrapper = document.querySelector('.slider-banners-home-wrapper');
+        const sliderBannerHomeWrapper = document.querySelector('.blog-pots-slider-wrapper');
         const wrapper = document.createElement('div');
         wrapper.innerHTML = structure;
         const titleSliderBannerHome = wrapper.querySelector('.titleSliderBannerHome');
         const contentSliderBannerHome = wrapper.querySelector('.contentSliderBannerHome');
         const viewMoreSliderBannerHome = wrapper.querySelector('.viewMoreSliderBannerHome');
         const sliderItems = [];
-        const sliderBannersHome = block.querySelectorAll('div.slider-banners-home.block > div');
-        const sectionTitle = block.querySelector('div.slider-banners-home.block h1');
-        const links = block.querySelectorAll('div.slider-banners-home.block a');
+        const sliderBannersHome = block.querySelectorAll('div.blog-pots-slider.block > div');
+        const sectionTitle = block.querySelector('div.blog-pots-slider.block h1');
+        const links = block.querySelectorAll('div.blog-pots-slider.block a');
         const viewMoreButton = links[links.length - 1];
         const href = viewMoreButton.getAttribute('href');
         titleSliderBannerHome.append(sectionTitle);
@@ -37,29 +37,19 @@ export default async function decorate(block) {
             const picture = element.querySelector('picture');
             const source = picture?.querySelector('source');
             const img = picture?.querySelector('img');
-            const title = element.querySelector('h2')?.innerHTML;
-            const subtitle = element.querySelector('h3')?.innerHTML;
-            const description = element.querySelector('p')?.innerHTML;
             const link = element.querySelector('a');
             const linkHref = link?.getAttribute('href');
             const linkText = link?.innerHTML;
-            if (picture || title || link || subtitle) {
+            if (picture || link) {
                 sliderItems.push(html`
-                    <div class="item-slider-row">
-                      <div class="item-slider-row-titles">
-                        <h2>${title || ''}</h2>
-                        <h3>${subtitle || ''}</h3>
-                      </div>
-                      <div class="item-slider-row-text">
-                        <p>${description || ''}</p>
-                      </div>
-                      <div class="item-slider-row-picture">
-                        <picture class="picture-slider-baner">
+                    <div class="item-blog-slider-row">
+                      <div class="item-blog-slider-row-picture">
+                        <picture class="picture-slider-baner-blog">
                             ${source && html`<source srcset=${source.getAttribute('srcset')} type=${source.getAttribute('type')} />`}
                             ${img && html`<img src=${img.getAttribute('src')} alt=${img.getAttribute('alt')} />`}
                         </picture>
                       </div>
-                      <div class="item-slider-row-link">
+                      <div class="item-blog-slider-row-link">
                         <a href=${linkHref}>${linkText || ''}</a>
                       </div>
                     </div>
@@ -69,14 +59,14 @@ export default async function decorate(block) {
         sliderBannerHomeWrapper.replaceChildren(wrapper);
         render(h(Slider, {
             items: sliderItems,
-            showArrows: false,
-            showDots: true,
+            showArrows: true,
+            showDots: false,
             breakpoints: {
               '(min-width: 1024px)': {
-                loop: false, active: false, slidesToScroll: 4, dots: false, arrows: false,
+                loop: true, active: false, slidesToScroll: 4, dots: false, arrows: true,
               },
               '(min-width: 768px)': {
-                loop: true, active: true, slidesToScroll: 3, dots: true, arrows: false,
+                loop: true, active: true, slidesToScroll: 3, dots: false, arrows: true,
               },
             },
         }), contentSliderBannerHome);

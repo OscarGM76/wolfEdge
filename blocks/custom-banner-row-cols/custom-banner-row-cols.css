@@ -1,0 +1,95 @@
+.custom-banner-row-cols.block>div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    align-items: center;
+    padding: 0 90px;
+    column-gap: 20px;
+}
+
+.custom-banner-row-1 {
+    background-color: #4e4d52;
+    border-radius: 20px;
+    padding: 33px;
+    padding-top: 98px;
+    padding-right: 65px;
+    grid-row: 1 / 2;
+}
+
+.custom-banner-row-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    grid-row: 2 / 2;
+}
+
+.custom-banner-row-3 {
+    grid-row: 2 / 1;
+}
+
+.custom-banner-row-1 h1 {
+    font-family: "Hind", sans-serif;
+    color: #fff;
+    margin: 0;
+    font-size: 40px;
+}
+
+.custom-banner-row-1 h2 {
+    font-family: "Hind", sans-serif;
+    color: #fff;
+    font-size: 30px;
+}
+
+.custom-banner-row-1 p {
+    font-family: "Hind", sans-serif;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.42857143;
+}
+
+.custom-banner-row-2 picture {
+    width: 75%;
+}
+
+@media only screen and (max-width: 768px) {
+    .custom-banner-row-cols.block>div {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1, auto);
+        align-items: center;
+        padding: 0 50px;
+        row-gap: 10px;
+    }
+
+    .custom-banner-row-1 {
+        grid-row: 1 / 2;
+    }
+
+    .custom-banner-row-2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        grid-row: 3 / 3;
+    }
+
+    .custom-banner-row-3 {
+        grid-row: 2 / 3;
+    }
+
+    .custom-banner-row-1 h1 {
+        font-size: 30px;
+    }
+
+    .custom-banner-row-1 h2 {
+        font-family: "Hind", sans-serif;
+        color: #fff;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .custom-banner-row-cols.block>div {
+        padding: 0 10px;
+    }
+}
