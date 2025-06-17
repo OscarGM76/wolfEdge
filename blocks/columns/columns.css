@@ -1,6 +1,7 @@
 @import "./fragments/fragment-products.css";
 @import "./adobe-analytics.css";
 @import "./magento-open-source.css";
+@import "./adobe-commerce.css";
 
 .columns > div {
   display: flex;
