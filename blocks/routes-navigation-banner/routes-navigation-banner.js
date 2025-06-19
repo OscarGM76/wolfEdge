@@ -2,10 +2,10 @@ import { render, h } from '@dropins/tools/preact.js';
 import ViewMoreButton from '../ViewMoreButton/viewMoreButton.js';
 import DynamicBannerByRoute from '../dynamicBannerByRoute/dynamicBannerByRoute.js';
 
-export default async function decorate() {
+export default async function decorate(block) {
   try {
     const pathname = window?.location?.pathname?.split('/').pop();
-    const listOfElemenst = document.querySelectorAll('.routes-navigation-banner.block > div');
+    const listOfElemenst = block.querySelectorAll(':scope > div');
     let sectionData = {};
     listOfElemenst.forEach((element) => {
       const divs = element.querySelectorAll('div');
@@ -32,7 +32,7 @@ export default async function decorate() {
     });
     const newContent = document.createElement('div');
     render(h(DynamicBannerByRoute, { pathname, content: sectionData }), newContent);
-    document.querySelector('.routes-navigation-banner.block').replaceWith(newContent);
+    block.replaceWith(newContent);
   } catch (error) {
     throw new Error(error);
   }

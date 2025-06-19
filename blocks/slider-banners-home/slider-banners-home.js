@@ -66,7 +66,7 @@ export default async function decorate(block) {
                   `);
             }
         });
-        sliderBannerHomeWrapper.replaceChildren(wrapper);
+        block.replaceChildren(wrapper);
         render(h(Slider, {
             items: sliderItems,
             showArrows: false,
