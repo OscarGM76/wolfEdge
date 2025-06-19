@@ -1,4 +1,6 @@
 @import "./fragments/fragment-products.css";
+@import "./fragments/fragment-ventajas-magento-commerce.css";
+@import "./fragments/fragment-caracteristicas-ventajas-magento.css";
 @import "./adobe-analytics.css";
 @import "./magento-open-source.css";
 @import "./adobe-commerce.css";
