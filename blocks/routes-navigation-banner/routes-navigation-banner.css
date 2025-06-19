@@ -1,0 +1,158 @@
+div.routes-navigation-banner-wrapper div.routes-navigation-banner-container {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    gap: 25px;
+    align-items: baseline;
+    padding-left: 75px;
+}
+
+.routes-navigation-banner-link-route {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    padding: 20px 5px 20px 17px;
+    border-radius: 34px;
+}
+
+.routes-navigation-banner-link-route a{
+    color: #ed1c24;
+    margin: 5px 0;
+    font-size: 18px;
+    font-family: "Hind", sans-serif;
+    word-break: break-all;
+}
+
+.link-route-icon {
+    width: 1rem;
+}
+
+.emptyIcon {
+    margin-left: 1.3rem;
+    color: #333537 !important;
+}
+
+.routes-navigation-banner-content-route  {
+    margin: 0;
+}
+
+.routes-navigation-banner-content-route h2{
+    font-size: 26px;
+    font-weight: 300;
+    font-family: "Hind", sans-serif;
+    margin: 0;
+}
+
+.routes-navigation-banner-content-route p{
+    font-size: 17px;
+    font-weight: 300;
+    font-family: "Hind", sans-serif;
+    margin: 0;
+}
+
+.routes-navigation-banner-content-route .viewMoreContainerButton {
+    margin-top: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+    div.routes-navigation-banner-wrapper div.routes-navigation-banner-container {
+        display: grid;
+        grid-template-columns: auto;
+        padding-left: 0;
+    }
+
+    .routes-navigation-banner-link-route {
+        display: none;
+    }
+}
+
+/** 
+    banner: magento-solution-specialist
+*/
+
+.magento-solution-specialist {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.magento-solution-specialist p{
+    grid-column: 1 / 2;
+    font-family: "Hind", sans-serif;
+}
+
+.magento-solution-specialist .viewMoreContainerButton {
+    grid-column: 1 / 2;
+}
+
+.magento-solution-specialist p:last-of-type{
+    grid-column: 2 / 2;
+    grid-row: 1 / 5 span;
+}
+
+@media only screen and (max-width: 768px) {
+    .magento-solution-specialist {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+    }
+
+    .magento-solution-specialist p:last-of-type{
+        grid-column: 1 / 2;
+        grid-row: unset;
+    }
+
+    .magento-solution-specialist p picture{
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
+
+/** 
+    banner: magento-omnicanal
+*/
+
+.magento-omnicanal p strong{
+    font-family: "Hind", sans-serif;
+    font-weight: bold;
+}
+
+.magento-omnicanal ul {
+    margin: 0rem;
+}
+
+.magento-omnicanal ul li {
+    font-size: 17px;
+}
+
+.magento-omnicanal ul li::before{
+    border-radius: 4px;
+    background-color: #ed1c24;
+    color: #ed1c24;
+    content: "";
+    display: inline-block;
+    height: 8px;
+    margin-right: 5px;
+    vertical-align: middle;
+    width: 8px;
+}
+
+.magento-omnicanal p:last-of-type{
+    font-family: "Hind", sans-serif;
+    color: #ed1c24;
+}
+
+/** 
+    banner: migracion-magento-1-a-magento-2
+*/
+
+
+.migracion-magento-1-a-magento-2 h2 strong{
+    font-weight: bold;
+    font-family: "Hind", sans-serif;
+}
+
+.migracion-magento-1-a-magento-2 h2 strong:last-of-type {
+    color: #ed1c24;
+}
