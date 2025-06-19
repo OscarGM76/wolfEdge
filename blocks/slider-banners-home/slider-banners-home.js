@@ -16,7 +16,6 @@ const structure = `
 
 export default async function decorate(block) {
     try {
-        const sliderBannerHomeWrapper = document.querySelector('.slider-banners-home-wrapper');
         const wrapper = document.createElement('div');
         wrapper.innerHTML = structure;
         const titleSliderBannerHome = wrapper.querySelector('.titleSliderBannerHome');
@@ -73,7 +72,7 @@ export default async function decorate(block) {
             showDots: true,
             breakpoints: {
               '(min-width: 1024px)': {
-                loop: false, active: false, slidesToScroll: 4, dots: false, arrows: false,
+                loop: true, active: false, slidesToScroll: 4, dots: false, arrows: false,
               },
               '(min-width: 768px)': {
                 loop: true, active: true, slidesToScroll: 3, dots: true, arrows: false,
