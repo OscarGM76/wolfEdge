@@ -1,0 +1,38 @@
+.banner-title-image.block > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 35px;     
+}
+
+.banner-title-image.block > div h1 {
+    font-family: "Hind", sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.banner-title-image.block > div h1 strong{
+    font-weight: bold;
+    word-wrap: break-word;
+}
+
+.banner-title-image.block > div div:last-of-type {
+    padding: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .banner-title-image.block > div {
+        display: grid;
+        grid-template-columns: auto;
+        padding-top: 35px;      
+    }
+    
+    .banner-title-image.block > div div:last-of-type {
+        padding: 1rem;
+    }
+    
+    .banner-title-image.block > div h1 {
+        font-size: 24px;
+    }
+
+}
