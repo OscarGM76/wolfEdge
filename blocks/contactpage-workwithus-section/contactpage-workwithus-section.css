@@ -7,10 +7,10 @@ div[class*='contactpage-workwithus-section-wrapper'] {
     background-image: url('./media_128a11e26c3e1bfed7ee1f647634fa310947ae5a5.png?width=750&format=png&optimize=medium');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     width: 100%;
   }
- 
+
 /* Estilos dl contenedor del bloque*/
 div[class*='contactpage-workwithus-section-wrapper'] [class*='workwithus'] {
     max-width: 1470px !important;
@@ -120,4 +120,19 @@ div[data-block-name="contactpage-workwithus-section"] .button:hover {
     div[class*='contactpage-workwithus-section-wrapper'] [class*='workwithus-title'] [id='trabaja-con-nosotros'] {
         font-size: 3.75rem !important;
     }
+}
+
+/* adobe experience manager page image */
+.aempage-wolfimage {
+    flex-direction: inherit !important;
+    align-items: center !important;
+    justify-content: flex-end;
+    height: 500px;
+}
+.aempage-wolfimage p:nth-child(2) {
+    font-size: 1.875rem !important;
+}
+
+.aempage-wolfimage p:nth-child(3) {
+    text-align: left;
 }

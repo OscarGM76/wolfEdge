@@ -381,3 +381,80 @@ main .section.highlight {
 .hide_items_slider {
   display: none;
 }
+
+
+
+.columns.ventajas-title > div {
+ 
+  align-items: start;
+  display: grid;
+  grid-template-columns: 55% 45%;
+}
+
+
+.columns.ventajas-title > div:first-child > div:nth-child(1) img {
+  width: 91px;
+}
+
+
+.columns.ventajas-title > div:first-child > div:nth-child(1) h1{
+ 
+  color: #333537;
+  font-size: 40px;
+}
+
+.carousel.carousel-text{
+  min-height: 480px;
+  text-align: center;
+  display: grid;
+  grid-auto-rows: 1fr auto;
+  background: #fff 0% 0% no-repeat padding-box;
+  box-shadow: 20px 20px 60px #d9d9d9;
+  border-radius: 38px;
+  margin: auto;
+}
+.carousel.carousel-text h2{
+  color: #333537;
+  font-size: 30px;
+}
+.carousel.carousel-text h3{
+  color: #333537;
+  width: 100%;
+  font-size: 24px;
+}
+
+
+.carousel.carousel-text p strong{
+  color: #ed1c24;
+
+
+}
+.carousel.carousel-text >div {
+  align-content: center;
+  text-align: center;
+}
+.carousel.carousel-text >nav {
+  align-content: flex-end;
+  top: -2rem;
+  position: relative;
+}
+
+
+
+
+.carousel.carousel-text .carousel-slides,
+.carousel.carousel-text .carousel-slide-indicators {
+
+
+  background-color: white;
+}
+
+
+.carousel.carousel-text .carousel-slide-image {
+
+
+  max-width: 900px;
+  margin: auto;
+
+
+}

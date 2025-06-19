@@ -1,21 +1,25 @@
-.columns.fragment-products .columns-img-col picture{
+.columns.caracteristicas-ventajas-magento .columns-img-col picture {
 	display: block;
-	max-width: 540px;
+	max-width: 226px;
+	margin: 0 auto;
 }
 
-.columns.fragment-products h2{
-	color: #EAEAEA;
-	font-size: 100px;
-	font-weight: 700;
-	margin: 80px 0 20px 0;
+.columns.caracteristicas-ventajas-magento p {
+	line-height: 1;
+	margin: 0;
 	text-align: right;
 }
 
-.columns.fragment-products p{
-	text-align: right;
+.columns.caracteristicas-ventajas-magento p > strong {
+	font-size: 48px;
 }
 
-.columns.fragment-products a {
+.columns.caracteristicas-ventajas-magento p:nth-child(3) {
+	color: #ED1C24;
+	margin-bottom: 20px;
+}
+
+.columns.caracteristicas-ventajas-magento a {
 	color: #4e4d52;
 	background: transparent linear-gradient(90deg, #fff -20%, #dcdce3 101%, #770e12 100%);
 	border: none;
@@ -30,13 +34,9 @@
 	width: 250px;
 }
 
-.columns.fragment-products a:hover {
+.columns.caracteristicas-ventajas-magento a:hover {
 	border: none;
 	background: #fff;
 	box-shadow: 1px 1px 10px #4e4d52;
 	transform: scale(.9, .9);
-}
-
-.aempage-products{
-    margin: 2rem 0;
 }
