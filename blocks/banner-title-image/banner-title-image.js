@@ -2,7 +2,7 @@ import { toBase64Image } from '../../scripts/utils/helpers.js';
 
 export default async function decorate(block) {
   try {
-    const backgroundContainer = document.querySelector('.section.banner-title-image-container');
+    const backgroundContainer = document.querySelector('.banner-title-image-wrapper');
     const background = Array.from(block.querySelectorAll('picture img')).pop();
     const bgBase64 = await toBase64Image(background);
     backgroundContainer.style.backgroundImage = `url(${bgBase64})`;
