@@ -1,0 +1,19 @@
+.columns.ventajas-magento-commerce > div {
+	align-items: flex-start;
+}
+
+.columns.ventajas-magento-commerce h1 {
+	font-size: 40px;
+	margin-block: 0 40px;
+}
+
+.columns.ventajas-magento-commerce p {
+	font-size: 17px;
+	line-height: 1.4;
+}
+
+.columns.ventajas-magento-commerce .columns-img-col picture{
+	display: block;
+	max-width: 233px;
+	margin-left: auto;
+}
