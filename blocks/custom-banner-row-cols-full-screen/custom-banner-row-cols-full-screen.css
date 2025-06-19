@@ -42,6 +42,22 @@ div.custom-banner-row-cols-full-screen.block > div {
     width: 49%;
 }
 
+.custom-banner-row-full-screen-2 .button-container .viewMoreContainerButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.custom-banner-row-full-screen-2 .button-container .viewMoreContainerButton a {
+    width: 100%;
+}
+
+.custom-banner-row-full-screen-2 .button-container .viewMoreContainerButton .viewMoreButton {
+    width: 100%;
+}
+
 @media only screen and (max-width: 768px) {
     div.custom-banner-row-cols-full-screen.block > div {
         grid-template-columns:auto;
