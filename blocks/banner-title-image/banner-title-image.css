@@ -1,3 +1,13 @@
+div.banner-title-image-wrapper {
+    max-width: 100%!important;
+    width: 100%!important;
+}
+
+.banner-title-image.block {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 .banner-title-image.block > div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

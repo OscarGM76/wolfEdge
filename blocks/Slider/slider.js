@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 import { h } from '@dropins/tools/preact.js';
 import { useEffect, useMemo, useRef, useState } from '@dropins/tools/preact-hooks.js';
 import htm from 'htm';
@@ -29,6 +30,9 @@ const Slider = (props) => {
       slidesToScroll: 1,
       loop: true,
       breakpoints,
+      startIndex: 0,
+      align: 'start',
+      containScroll: 'trimSnaps',
     };
     if (!breakpoints) {
       configurableOptions.breakpoints = undefined;
@@ -48,10 +52,11 @@ const Slider = (props) => {
     const slideElements = emblaRef.current?.querySelectorAll('.embla__slide');
     if (!slideElements) return;
     const { width } = size;
-    const breakpoints = Object.entries(options.breakpoints || {});
+    const breakpointsOptions = Object.entries(options.breakpoints || {});
     let selected = null;
     let maxMatched = 0;
-    for (const [breakpoint, data] of breakpoints) {
+    // eslint-disable-next-line no-restricted-syntax
+    for (const [breakpoint, data] of breakpointsOptions) {
       const bpSize = getBreakPointSize(breakpoint);
       if (width > bpSize && bpSize > maxMatched) {
         selected = data;
@@ -70,8 +75,6 @@ const Slider = (props) => {
       slideElements.forEach((slide) => {
         slide.style.flex = '0 0 100%';
       });
-      console.log('showArrowsInitialValue',showArrowsInitialValue);
-      
       setshowDots(showDotsInitialValue);
       setshowArrows(showArrowsInitialValue);
       setSlidesToScroll(1);
@@ -80,17 +83,17 @@ const Slider = (props) => {
 
   useEffect(() => {
     if (emblaInstanceRef) {
-      const slidesCount = emblaInstanceRef.slideNodes().length;
-      const numberOfDots = Math.ceil(slidesCount / currentSlidesToScroll);
+      const slidesCount = emblaInstanceRef.scrollSnapList().length;
       if (dotsWrapperRef.current) {
         dotsWrapperRef.current.innerHTML = '';
-        for (let i = 0; i < numberOfDots; i++) {
+        const newArray = Array.from({ length: slidesCount });
+        newArray.forEach((_, i) => {
           const dot = document.createElement('button');
           dot.className = 'dot';
           dot.dataset.index = i;
           dot.addEventListener('click', () => emblaInstanceRef.scrollTo(i));
           dotsWrapperRef.current.appendChild(dot);
-        }
+        });
       }
 
       emblaInstanceRef.on('select', () => {
@@ -119,7 +122,6 @@ const Slider = (props) => {
       }
     });
   }, [emblaRef, options]);
-console.log('showArrows',showArrows);
 
   return html`
     <div class="embla">
