@@ -1,0 +1,51 @@
+div[class*="erp-integration-section"] [class*='integration-section-firts'] {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* <-- Aquí se alinea arriba */
+  padding: 40px 5%;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+ 
+div[class*="erp-integration-section"] [class*='integration-section-firts'] > div:first-child {
+  flex: 1;
+  min-width: 300px;
+}
+ 
+div[class*="erp-integration-section"] [class*='integration-section-firts'] > div:first-child h1 {
+  font-size: 2.5rem;
+  color: #2a2a2a;
+  font-weight: bold;
+}
+ 
+div[class*="erp-integration-section"] [class*='integration-section-firts'] > div:last-child {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}
+ 
+div[class*="erp-integration-section"] [class*='integration-section-firts'] img {
+  max-width: 70%;
+  height: auto;
+}
+ 
+ 
+ 
+@media (max-width: 768px) {
+  div[class*="erp-integration-section"] [class*='integration-section-firts'] {
+    flex-direction: column;
+    text-align: center;
+  }
+ 
+  div[class*="erp-integration-section"] [class*='integration-section-firts'] > div {
+    flex: unset;
+    width: 100%;
+  }
+ 
+  div[class*="erp-integration-section"] [class*='integration-section-firts'] > div:last-child {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
