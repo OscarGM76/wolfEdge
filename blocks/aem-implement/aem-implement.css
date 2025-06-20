@@ -1,0 +1,386 @@
+/*---------------------------- HEAD ----------------------------*/
+
+.aem-implement-head-container {
+    margin: 0 !important;
+}
+
+.aem-implement-head-container p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.42857143;
+    text-rendering: optimizeLegibility;
+    word-wrap: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.aem-implement-head-wrapper {
+    padding: 0 !important;
+    max-width: none !important;
+}
+
+.aem-implement-head {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.aem-implement-head .rowClass_1 {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.aem-implement-head .rowClass_1 img {
+    width: 100%;
+    height: 100%;
+    min-height: 680px;
+    max-height: 680px;
+    object-fit: cover;
+}
+
+.aem-implement-head .rowClass_2 {
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 6rem;
+    margin: 0 auto;
+
+    z-index: 0;
+}
+
+.aem-implement-head .rowClass_2 .columnClass_1 {
+    width: 100%;
+    max-width: 100%;
+}
+
+.aem-implement-head .rowClass_2 .columnClass_1 h1 {
+    font-size: 1.75rem;
+    margin: 0;
+}
+
+.aem-implement-head .rowClass_2 .columnClass_1 p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.42857143;
+    text-rendering: optimizeLegibility;
+    word-wrap: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.aem-implement-head .rowClass_2 .columnClass_1 h3 {
+    font-size: 52px;
+    font-weight: 300;
+    line-height: 56px;
+    word-wrap: normal;
+    text-rendering: optimizeLegibility;
+    margin: 0;
+    padding: 0;
+}
+
+.aem-implement-head .rowClass_2 .columnClass_1 h3 strong {
+    color: #ed1c24;
+}
+
+.aem-implement-head .rowClass_2 .columnClass_2 {
+    width: 100%;
+}
+
+.aem-implement-head .rowClass_2 .columnClass_2 img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    padding: 1.25rem;
+}
+
+/*---------------------------- SECTION TAB - START ----------------------------*/
+
+.sectionTab {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: flex-start;
+    column-gap: 1.5rem;
+    row-gap: 1rem;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto !important;
+    padding: 0 1rem;
+    padding-bottom: 2.5rem;
+    color: #333537;
+}
+
+.sectionTab p {
+    font-size: 1rem;
+    line-height: 1.42857143;
+    text-rendering: optimizeLegibility;
+    word-wrap: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.sectionTab h3 {
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 1.25;
+    word-wrap: normal;
+    text-rendering: optimizeLegibility;
+    margin: 0;
+    padding: 0;
+}
+
+.sectionTab > div {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.sectionTab .tab-option-wrapper {
+    display: none;
+}
+
+.sectionTab .tab-option-active {
+    display: block;
+}
+
+/*---------------------------- TAB ----------------------------*/
+
+.sectionTab .containerTabs {
+    width: 100%;
+    padding: 1.125rem 1.5rem;
+    border-right: 1px solid #eaeaea;
+    background-color: #f2f2f2;
+    border-radius: 2rem;
+}
+
+.sectionTab .containerTabs .tab {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 0.5rem;
+}
+
+.sectionTab .containerTabs .tab .btnTab {
+    font-size: 18px;
+    font-weight: normal;
+    text-align: start;
+    margin: 0;
+    padding: 0;
+    color: #333537;
+    background: none;
+    border: none;
+    border-radius: 0;
+    white-space: inherit;
+    transition: 180ms ease-in-out;
+}
+
+.sectionTab .containerTabs .tab .active,
+.sectionTab .containerTabs .tab .btnTab:hover,
+.sectionTab .containerTabs .tab .btnTab:active {
+    color: #ed1c24;
+}
+
+.sectionTab .containerTabs .tab .active::before {
+    content: "►";
+    margin-right: 0.2rem;
+}
+
+/*---------------------------- OPTIONS ----------------------------*/
+
+.sectionTab .tab-option-wrapper .rowClass_1 .columnClass_1 h3 {
+    margin: 0;
+    margin-bottom: 0.75rem;
+}
+
+.sectionTab .tab-option-wrapper .rowClass_2 img {
+    width: 100%;
+}
+
+.sectionTab .tab-option-wrapper .rowClass_3 p {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.sectionTab .tab-option-wrapper .rowClass_3 p > strong {
+    color: #ed1c24;
+}
+
+.sectionTab .tab-option-wrapper .rowClass_4 .viewMoreButton {
+    margin-top: 1.125rem;
+    margin-bottom: 10px;
+}
+/*---------------------------- SECTION TAB - END ----------------------------*/
+
+/*---------------------------- COVER ----------------------------*/
+
+.aem-cover-container {
+    padding: 0 1rem;
+    margin: 0 !important;
+    color: white;
+    background-color: #eaeaea;
+}
+
+.aem-cover-wrapper {
+    padding: 0 !important;
+    max-width: none !important;
+}
+
+.aem-cover-container .rowClass_1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    max-width: 1400px;
+    padding: 3.75rem 0;
+    margin: 0 auto;
+    column-gap: 10%;
+}
+
+.aem-cover-container .rowClass_1 p,
+.aem-cover-container .rowClass_1 h3 {
+    margin: 0;
+    color: #4e4d52;
+}
+
+.aem-cover-container .rowClass_1 p {
+    font-size: 1.25rem;
+    line-height: 1.42857143;
+    text-rendering: optimizeLegibility;
+    word-wrap: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.aem-cover-container .rowClass_1 h3 {
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 1.25;
+    word-wrap: normal;
+    text-rendering: optimizeLegibility;
+    margin: 0;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+
+.aem-cover-container .rowClass_1 .columnClass_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    grid-row: 1 / 3;
+}
+
+.aem-cover-container .rowClass_1 .columnClass_1 img {
+    object-fit: contain;
+    width: 100%;
+}
+
+.aem-cover-container .rowClass_1 .columnClass_1 h3 {
+    text-align: right;
+    width: 100%;
+    margin: 0;
+}
+
+.aem-cover-container .rowClass_1 .columnClass_2 {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.aem-cover-container .rowClass_1 .columnClass_2 h3 {
+    color: #000;
+}
+
+.aem-cover-container .rowClass_1 .columnClass_3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+}
+
+.aem-cover-container .rowClass_1 .columnClass_3 .button-container {
+    margin: 0;
+}
+
+.aem-cover-container .rowClass_1 .columnClass_3 .viewMoreButton {
+    margin: 0;
+    font-size: 1.125rem;
+}
+
+/*---------------------------- FRAGMENT COLUMN ----------------------------*/
+
+.columns-container h2 {
+    font-size: 2.5rem !important;
+}
+
+@media (width >= 768px) {
+    /*---------------------------- HEAD ----------------------------*/
+    .aem-implement-head .rowClass_2 {
+        justify-content: space-between;
+        padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .aem-implement-head .rowClass_2 .columnClass_1 {
+        max-width: 50%;
+        min-width: 50%;
+    }
+
+    .aem-implement-head .rowClass_2 .columnClass_1 h1 {
+        font-size: 2.75rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .aem-implement-head .rowClass_2 .columnClass_2 {
+        width: 40%;
+    }
+
+    /*---------------------------- SECTION TAB ----------------------------*/
+    .sectionTab {
+        grid-template-columns: 350px auto;
+    }
+
+    .sectionTab p {
+        font-size: 1.125rem;
+    }
+
+    .sectionTab .containerTabs {
+        padding: 1.125rem 2.5rem;
+    }
+
+    .sectionTab .tab-option-wrapper .rowClass_2 img {
+        width: auto;
+    }
+
+    /*---------------------------- COVER ----------------------------*/
+    .aem-cover-container .rowClass_1 {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 3.75rem;
+    }
+
+    .aem-cover-container .rowClass_1 .columnClass_1 {
+        align-items: flex-end;
+    }
+
+    .aem-cover-container .rowClass_1 .columnClass_1 img {
+        max-width: 430px;
+    }
+
+    .aem-cover-container .rowClass_1 .columnClass_2 {
+        max-width: 530px;
+        margin: 0;
+    }
+
+    /*---------------------------- FRAGMENT COLUMN ----------------------------*/
+
+    .columns-container h2 {
+        font-size: 100px !important;
+    }
+}
