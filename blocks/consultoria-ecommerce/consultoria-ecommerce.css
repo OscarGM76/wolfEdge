@@ -231,6 +231,22 @@
     font-size: 2.5rem !important;
 }
 
+/*---------------------------- FRAGMENT SLIDER ----------------------------*/
+
+.fragment-wrapper .slider-services-consultancy {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.fragment-wrapper .slider-services-consultancy .titleSliderBannerServices {
+    padding: 0 1rem;
+}
+
+.fragment-wrapper .slider-services-consultancy .contentSliderBannerServices {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
 @media (width >= 768px) {
     /*---------------------------- HEAD ----------------------------*/
     .consultoria-ecommerce-head .rowClass_2 {
