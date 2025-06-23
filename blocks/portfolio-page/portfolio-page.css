@@ -1,0 +1,76 @@
+.portfolio-page-container {
+}
+
+.portfolio-page-container .portfolio-page-wrapper {
+    display: none;
+}
+
+.portfolio-page-container .columns-wrapper .storestable > div {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.portfolio-page-container .columns-wrapper .storestable > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    order: unset;
+}
+
+.portfolio-page-container .columns-wrapper .storestable > div > div > p {
+    margin: 0;
+}
+
+.portfolio-page-container .columns-wrapper .storestable img {
+    filter: grayscale(1);
+    transition: all 200ms ease-in-out;
+}
+
+.portfolio-page-container .columns-wrapper .storestable img:hover {
+    filter: grayscale(0);
+}
+
+.portfolio-page-container .columns-wrapper .storestable .button-container {
+    width: auto;
+    margin: 0;
+    justify-self: center;
+}
+
+.portfolio-page-container .columns-wrapper .storestable .button-container a {
+    font-size: 1.125rem;
+    font-weight: normal;
+    text-decoration: none;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    color: #ed1c24;
+    background: none;
+    transition: all 0.3s;
+}
+
+.portfolio-page-container
+    .columns-wrapper
+    .storestable
+    .button-container
+    a:hover {
+    color: #4e4d52;
+}
+
+@media (width >= 768px) {
+    .portfolio-page-container .columns-wrapper .storestable > div {
+        flex-wrap: inherit;
+    }
+    .portfolio-page-container .columns-wrapper .storestable > div > div {
+        width: auto;
+    }
+
+    .portfolio-page-container .columns-wrapper .storestable img {
+        max-width: 150px;
+    }
+}
