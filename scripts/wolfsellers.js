@@ -7,7 +7,6 @@ async function applyTranslations(lang) {
   // Traducir elementos normales con data-i18n
   document.querySelectorAll('[data-i18n]').forEach((el) => {
     const key = el.getAttribute('data-i18n');
-    console.log('key', key);
     if (translations[key]) {
       el.textContent = translations[key];
     }
