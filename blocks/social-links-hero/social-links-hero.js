@@ -15,8 +15,8 @@ export default function decorate(block) {
       const img = picture?.querySelector('img');
       socialLinksList.push(html`
         <div>
-            <a href=${link} aria-label=${img.getAttribute('alt')}>
-                ${img && html`<img src=${img.getAttribute('src')} alt=${img.getAttribute('alt')} />`}
+            <a href=${link} aria-label=${img?.getAttribute('alt')}>
+                ${img && html`<img src=${img?.getAttribute('src')} alt=${img.getAttribute('alt')} />`}
             </a>
         </div>
     `);
