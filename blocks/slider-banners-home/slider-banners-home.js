@@ -58,9 +58,9 @@ export default async function decorate(block) {
                             ${img && html`<img src=${img.getAttribute('src')} alt=${img.getAttribute('alt')} />`}
                         </picture>
                       </div>
-                      <div class="item-slider-row-link">
+                      ${linkHref && html`<div class="item-slider-row-link">
                         <a href=${linkHref}>${linkText || ''}</a>
-                      </div>
+                      </div>`}
                     </div>
                   `);
             }
