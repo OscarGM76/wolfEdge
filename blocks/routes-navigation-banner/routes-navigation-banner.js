@@ -16,12 +16,14 @@ export default async function decorate(block) {
       firstLink.remove();
       secondDiv.classList.add(url);
       const viewMoreContainer = secondDiv.querySelector('a');
-      const secondLinkData = {};
-      secondLinkData.href = viewMoreContainer.getAttribute('href');
-      secondLinkData.text = viewMoreContainer.innerHTML;
-      const newButtonContainer = document.createElement('div');
-      render(h(ViewMoreButton, secondLinkData), newButtonContainer);
-      viewMoreContainer.parentElement.replaceWith(newButtonContainer);
+      if (viewMoreContainer) {
+        const secondLinkData = {};
+        secondLinkData.href = viewMoreContainer.getAttribute('href');
+        secondLinkData.text = viewMoreContainer.innerHTML;
+        const newButtonContainer = document.createElement('div');
+        render(h(ViewMoreButton, secondLinkData), newButtonContainer);
+        viewMoreContainer.parentElement.replaceWith(newButtonContainer);
+      }
       sectionData = {
         ...sectionData,
         [url]: {
