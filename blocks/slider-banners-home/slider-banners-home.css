@@ -63,7 +63,7 @@
 }
 
 /* EMBLA 000*/
-.embla__slide .item-slider-row {
+.embla__slide:not(:first-child) .item-slider-row {
 	align-items: start;
 	display: grid;
 	height: 100%;
