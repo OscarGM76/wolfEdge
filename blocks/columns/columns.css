@@ -3,6 +3,7 @@
 @import "./fragments/fragment-caracteristicas-ventajas-magento.css";
 @import "./adobe-analytics.css";
 @import "./magento-open-source.css";
+@import "/blocks/nuestros-servicios/nuestros-servicios.css";
 @import "./adobe-commerce.css";
 
 .columns > div {
