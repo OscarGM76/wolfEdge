@@ -1,0 +1,49 @@
+.columns-wrapper .listservices div > p > strong{
+   font-size: 1.6rem;
+   font-weight: bold;
+}
+
+.columns-wrapper .listservices div > p {
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+
+
+
+.columns-wrapper .listservices div > p:nth-of-type(2){
+   font-size: 1.6rem;
+   font-weight: 400;
+}
+
+.columns-wrapper .listservices div > p:nth-of-type(3){
+   font-size: 1rem
+}
+
+.columns-wrapper .listservices div .button-container .button {
+  color: #e30613; /* rojo */
+  font-weight: bold;
+  text-decoration: none;
+  background: none;
+  font-size: 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px; /* espacio entre texto y flecha */
+  transition: all 0.3s ease;
+}
+
+.columns-wrapper .listservices div .button-container .button:hover{
+   text-decoration: underline;
+}
+
+.columns-container .services-lead {
+    margin-left: 4rem;
+   text-align: start;
+   font-weight: 100 !important;
+   font-size: 1.6rem;
+   font-weight: bold;
+   max-width: 60%;
+} 
+
+.columns-container .services-lead div {
+   margin: auto;
+} 
