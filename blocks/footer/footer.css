@@ -45,6 +45,20 @@ footer .footer p {
   color: #fff;
 }
 
+.footer-container .firstcolumn > div .button-container a {
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  width: auto !important;
+  display: inline !important;
+  color: white !important;
+  font: inherit !important;
+  text-decoration: none;
+}
+
+
+.footer-container .firstcolumn > div 
+
 .footer-container > div > div > div > div > div:nth-of-type(2) p:first-of-type,
 .footer-container > div > div > div > div > div:nth-of-type(3) p:first-of-type{
   font-size: 18px;

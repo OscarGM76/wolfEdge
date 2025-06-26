@@ -1,0 +1,48 @@
+.success-stories-page-container .default-content-wrapper h1 {
+    font-size: 1.5rem;
+    margin-top: 4rem;
+}
+
+.success-stories-page-container .stories-wrapper {
+    padding: 0 1.25rem;
+}
+
+.success-stories-page-container .stories {
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(84, 95, 125, 0.12),
+        0 5px 8px rgba(155, 159, 174, 0.1);
+    border-radius: 6px;
+}
+
+.success-stories-page-container .stories .rowClass_1 p {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 1rem;
+    color: #ed1c24;
+}
+
+.success-stories-page-container .stories > div .columnClass_2 {
+    margin-bottom: 1rem;
+}
+
+.success-stories-page-container .stories > div .columnClass_2 p {
+    font-size: 13px;
+    margin: 0;
+}
+
+.success-stories-page-container .stories > div .columnClass_2 .button {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 1rem;
+    padding: 0;
+    color: #1979c2;
+    background: none;
+}
+
+@media (width >= 768px) {
+    .success-stories-page-container .default-content-wrapper h1 {
+        font-size: 55px;
+    }
+}

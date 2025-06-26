@@ -5,7 +5,7 @@ import { getLanguage } from '../../scripts/wolfsellers.js';
  * loads and decorates the footer
  * @param {Element} block The footer block element
  */
-export default async function decorate(block) {
+export default async function decorate(block) {  
   // load footer as fragment
   const language = getLanguage();
   const footerMeta = getMetadata('footer');
@@ -22,6 +22,71 @@ export default async function decorate(block) {
 
   block.append(footer);
 
+  // thi is function add tel 
+  const contentLink = block.querySelectorAll('div a')
+  contentLink.forEach((link, index) => {
+    if(!link) return
+    const linkValidation = link.getAttribute('href')
+
+      const linkValidationSocialNetwork = link.getAttribute('title')
+    console.log(linkValidationSocialNetwork, 'linkValidationSocialNetwork');
+    
+    const match = linkValidation.match(/\+(\d+)/)
+
+    const matchEmail = linkValidation.match(/([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/)
+
+    const socialMatch = linkValidationSocialNetwork.match(/facebook|linkedin|twitter|instagram|tiktok/i)
+    
+
+    if(matchEmail){
+      const getEmail = matchEmail[1]
+      const href = `mailto:${getEmail}`
+      console.log(href, "href");
+      link.setAttribute('href', href)
+      link.removeAttribute('target')
+    }
+
+    if(match){
+      const getNumber = match[1]
+      const href = `tel:${getNumber}`
+      console.log(href, "href");
+      link.setAttribute('href', href)
+      link.removeAttribute('target')
+    }
+
+    if (socialMatch) {
+    const platform = socialMatch[0].toLowerCase()
+    let href = ''
+
+    switch (platform) {
+      case 'facebook':
+        href = 'https://www.facebook.com/wolfsellers/'
+        break
+      case 'instagram':
+        href = 'https://www.instagram.com/wolfsellers'
+        break
+      case 'linkedin':
+        href = 'https://mx.linkedin.com/company/wolf-sellers'
+        break
+      case 'twitter':
+        href = 'https://twitter.com/wolf_sellers'
+        break
+      case 'tiktok':
+        href = 'https://www.tiktok.com/@wolf.sellers'
+        break
+    }
+
+    if (href) {
+      link.setAttribute('href', href)
+      link.removeAttribute('target')
+    }
+  }
+    
+  })
+
+  console.log(block, "block");
+
+   console.log(contentLink, "contenLink");
   // Group icon pairs + text in the social footer
 const socialParagraph = footer.querySelector(
   '.secondcolumn > div > div:nth-of-type(1) > p:nth-of-type(2)'

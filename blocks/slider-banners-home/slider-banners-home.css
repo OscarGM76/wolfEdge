@@ -61,3 +61,14 @@
         font-size: 50px;
     }
 }
+
+/* EMBLA 000*/
+.embla__slide .item-slider-row {
+	align-items: start;
+	display: grid;
+	height: 100%;
+}
+
+.embla__slide .item-slider-row-link {
+	align-self: end;
+}
