@@ -49,10 +49,6 @@ main .section.blog-page-container {
     margin: 2.5rem auto;
 }
 
-.blog-page-container .cards-container .cards ul {
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-}
-
 .blog-page-container .cards-container .cards li {
     overflow: hidden;
     background: #fff;
