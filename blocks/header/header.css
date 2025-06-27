@@ -198,7 +198,7 @@ header nav .nav-sections .default-content-wrapper > ul > li > ul > li > ul > li:
 }
 
 header nav .nav-sections .default-content-wrapper > ul > li > ul > li > ul > li picture {
-  margin-left: calc(var(--size-04) * -1);
+  /*margin-left: calc(var(--size-04) * -1);*/
   display: inline-flex;
 }
 
@@ -565,7 +565,7 @@ header .nav-tools .button-container a {
     left: 0;
     width: 100%;
     top: var(--nav-height);
-    padding: 16px 2.8% 16px 16.8%;
+    padding: 16px 0;
     white-space: initial;
     height: calc(100dvh - var(--nav-height));
     max-height: 23.75rem;
