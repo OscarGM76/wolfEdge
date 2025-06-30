@@ -508,7 +508,7 @@ header .nav-tools .button-container a {
     column-gap: 1.95%;
     margin: 0;
     flex-wrap: nowrap;
-    overflow-x: auto;
+    /*overflow-x: auto;*/
   }
   
   header nav .nav-sections .default-content-wrapper > ul > li {
