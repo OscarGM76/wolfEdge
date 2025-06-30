@@ -8,7 +8,7 @@ const ViewMoreButton = (props) => {
   return html`
     <div class="viewMoreContainerButton">
           <a href=${href}>
-            <button class="viewMoreButton">
+            <button class="viewMoreButton" aria-label="siguiente slider">
             ${text || ''}
             </button>
           </a>

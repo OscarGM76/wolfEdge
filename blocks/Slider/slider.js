@@ -91,6 +91,7 @@ const Slider = (props) => {
           const dot = document.createElement('button');
           dot.className = 'dot';
           dot.dataset.index = i;
+          dot.setAttribute('aria-label', `Ir al slide ${i + 1}`);
           dot.addEventListener('click', () => emblaInstanceRef.scrollTo(i));
           dotsWrapperRef.current.appendChild(dot);
         });
@@ -133,12 +134,14 @@ const Slider = (props) => {
     <button
       ref=${prevBtnRef}
       class=${`embla__button embla__button--prev ${showArrows ? '' : 'hide_items_slider'}`}
+      aria-label="Ir al slide anterior"
     >
       ${html`<${ChevronLeftIcon} class='pruebaIcon' />`}
     </button>
     <button 
       ref=${nextBtnRef} 
       class=${`embla__button embla__button--next ${showArrows ? '' : 'hide_items_slider'}`}
+      aria-label="Ir al siguiente slide"
     >
       ${html`<${ChevronRigthIcon} class='pruebaIcon' />`}
     </button>
