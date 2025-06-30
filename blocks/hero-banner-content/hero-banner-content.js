@@ -6,8 +6,7 @@ export default function decorate(block) {
     const heroBannerSecondColumn = document.querySelector('.heroBannerSecondColumn');
     const heroBannerFirstColumnText = document.querySelector('.heroBannerFirstColumnText');
     const parent = document.querySelector('.hero-banner-content-wrapper');
-    const picture = block.querySelector('div.hero-banner-content > div > div > picture');
-    picture.classList.add('hero-banner-content-picture');
+    const picture = block.querySelector('div.hero-banner-content > div > div > picture > img');
     heroBannerSecondColumn.append(picture);
     block.querySelectorAll('div.hero-banner-content > div > div').forEach((item) => {
       const blockName = 'hero-banner-content-text';
