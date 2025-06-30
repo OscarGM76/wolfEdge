@@ -10,13 +10,16 @@ export default function decorate(block) {
     const heroBannerFirstColumnSocialLinks = document.querySelector('.heroBannerFirstColumnSocialLinks');
     const socialLinksHero = block.querySelectorAll('div.social-links-hero.block > div');
     Array.from(socialLinksHero).forEach((element) => {
-      const link = element.querySelector('p').innerHTML;
-      const picture = element?.querySelector('picture');
+      const link = element.querySelector('p')?.textContent?.trim();
+      const picture = element.querySelector('picture');
       const img = picture?.querySelector('img');
+
+      const altText = img?.getAttribute('alt')?.trim();
+      const label = altText && altText.length > 0 ? altText : 'Enlace a red social';
       socialLinksList.push(html`
         <div>
-            <a href=${link} aria-label=${img?.getAttribute('alt')}>
-                ${img && html`<img src=${img?.getAttribute('src')} alt=${img.getAttribute('alt')} />`}
+            <a href=${link} aria-label=${label}>
+                ${img && html`<img src=${img?.getAttribute('src')} alt=${label} />`}
             </a>
         </div>
     `);
