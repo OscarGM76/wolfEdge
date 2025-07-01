@@ -33,6 +33,10 @@
     margin-top: 2rem;
 }
 
+.heroBannerSecondColumn {
+    min-height: 400px;
+}
+
 @media only screen and (max-width: 768px) {
     .heroBannerContainer {
         display: flex;
