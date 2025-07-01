@@ -1,3 +1,5 @@
+
+import {trackPageView} from '../../scripts/tagEvents.js';
 export default function decorate(block) {
   try {
     console.log('[custom-script] Iniciando procesamiento del bloque...');
@@ -30,6 +32,7 @@ export default function decorate(block) {
             newScript.src = script.src;
             newScript.async = script.async ?? true;
             console.log(`[custom-script] Inyectando script externo: ${script.src}`);
+            trackPageView();
           } else {
             newScript.textContent = script.textContent;
             console.log(`[custom-script] Inyectando script inline:`, script.textContent);
