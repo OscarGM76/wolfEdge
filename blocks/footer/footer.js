@@ -29,8 +29,7 @@ export default async function decorate(block) {
     const linkValidation = link.getAttribute('href')
 
       const linkValidationSocialNetwork = link.getAttribute('title')
-    console.log(linkValidationSocialNetwork, 'linkValidationSocialNetwork');
-    
+
     const match = linkValidation.match(/\+(\d+)/)
 
     const matchEmail = linkValidation.match(/([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/)
@@ -41,7 +40,6 @@ export default async function decorate(block) {
     if(matchEmail){
       const getEmail = matchEmail[1]
       const href = `mailto:${getEmail}`
-      console.log(href, "href");
       link.setAttribute('href', href)
       link.removeAttribute('target')
     }
@@ -49,7 +47,6 @@ export default async function decorate(block) {
     if(match){
       const getNumber = match[1]
       const href = `tel:${getNumber}`
-      console.log(href, "href");
       link.setAttribute('href', href)
       link.removeAttribute('target')
     }
@@ -84,9 +81,6 @@ export default async function decorate(block) {
     
   })
 
-  console.log(block, "block");
-
-   console.log(contentLink, "contenLink");
   // Group icon pairs + text in the social footer
 const socialParagraph = footer.querySelector(
   '.secondcolumn > div > div:nth-of-type(1) > p:nth-of-type(2)'
