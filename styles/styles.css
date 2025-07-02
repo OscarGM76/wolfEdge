@@ -461,3 +461,209 @@ main .section.highlight {
 
 
 }
+
+/* sections/pages blogs */
+.columns-highlight-black,
+.columns-highlight-purple,
+.columns-text-center,
+.columns-text{
+  font-size: clamp(1rem, 0.9821rem + 0.0893vw, 1.0625rem);
+}
+
+.columns-text-center div,
+.columns-text div {
+  padding: 5px;
+  max-width: 1165px;
+  margin: auto;
+}
+.columns-text-center{
+  text-align: right;
+}
+
+.columns-highlight-purple-title-video-wrapper{
+   max-width: 1335px !important;
+  padding: 0 !important;
+}
+
+.columns-highlight-purple-title-video {
+  background-color: #8400FE;
+  color: #fff;
+  text-align: center;
+  font-size: 26px;
+}
+.columns-highlight-purple-title-video >div{
+  max-width: 1165px;
+  margin: auto;
+  padding: 18px 10px;
+}
+.columns-highlight-purple {
+  background-color: #8400FE;
+  color: #fff;
+}
+
+.columns-highlight-purple >div{
+  max-width: 1165px;
+  margin: auto;
+  padding: 24px 10px;
+}
+.columns-highlight-black-iaecommerce {
+  background-color: #1C1918;
+  color: #fff;
+  text-align: center;
+  font-size: 26px;
+}
+.columns-highlight-black-iaecommerce >div{
+  max-width: 1165px;
+  margin: auto;
+  padding: 48px 10px;
+}
+.columns-highlight-black {
+  background-color: black;
+  color: #fff;
+}
+
+.columns-highlight-black >div{
+  max-width: 1165px;
+  margin: auto;
+  padding: 48px 10px;
+}
+.columns-highlight-light-grey-title,
+.columns-highlight-light-grey{
+  background-color: #eaeaea;
+  color: black;
+}
+
+.columns-highlight-grey {
+  background-color: #535353;
+  color: black;
+}
+.columns-highlight-grey-text-white{
+  background-color: #535353;
+  color: white;
+}
+.columns-highlight-grey-text-black{
+  background-color: #c1c1c1;
+  color: black;
+}
+.columns-highlight-light-grey-title >div{
+  max-width: 1165px;
+  margin: auto;
+  padding: 10px ;
+}
+
+.columns-highlight-grey-text-white >div,
+.columns-highlight-grey-text-black >div,
+.columns-highlight-light-grey >div,
+.columns-highlight-grey >div{
+  max-width: 1165px;
+  margin: auto;
+  padding: 48px 10px;
+}
+.columns-highlight-red {
+  background-color: #fc0009;
+  color: #fff;
+  text-align: center;
+}
+
+.columns-highlight-red-8-cosas{
+  background-color: #fc0009;
+  color: #fff;
+  
+}
+.columns-highlight-red-8-cosas >div,
+.columns-highlight-red >div{
+  max-width: 1165px;
+  margin: auto;
+  padding: 48px 10px;
+}
+
+
+.columns-image-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.img-bg-red {
+  background-color: #FB0F01;
+}
+
+.img-bg-black {
+  background-color: #000;
+}
+.blog-creatividad-y-marketing{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 26px;
+  margin-block: 1rem;
+}
+.blog-creatividad-y-marketing p{
+  margin: 0 !important;
+ 
+}
+.highlight-black-section-w-image{
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding-block: 1rem;
+  margin-bottom: 1rem;
+  margin-block: 1rem;
+}
+.highlight-light-grey-section-w-image{
+ background-color: #eaeaea;
+  color: #fff;
+  color: black;
+  text-align: center;
+  padding-block: 1rem;
+  margin-bottom: 1rem;
+}
+.highlight-purple-section-w-image{
+  background-color: #8400FE;
+  color: #fff;
+  text-align: center;
+  padding-block: 1rem;
+  margin-bottom: 1rem;
+}
+.highlight-black-section-w-image p,
+.highlight-light-grey-section-w-image p,
+.highlight-purple-section-w-image p{
+  text-align: left;
+  font-size: clamp(1rem, 0.9821rem + 0.0893vw, 1.0625rem);
+  padding-inline: .5rem;
+  max-width: 480px;
+  margin: auto;
+}
+.highlight-black-section-w-image h3{
+  text-align: left;
+  padding-inline:8px ;
+  max-width: 480px;
+  margin: auto;
+  
+}
+
+.blog-text-center {
+  text-align: center;
+  font-size: 12px;
+}
+
+.blog-highlight-black {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 26px;
+
+}
+.blog-highlight-black > div {
+  display: grid !important;
+  grid-template-columns: 10% 70% 20%;
+  text-align: left;
+}
+.blog-espacio-tb {
+  padding: 1rem 0;
+}
+
+.blog-text-center-normal{
+
+  font-size: clamp(1rem, 0.9821rem + 0.0893vw, 1.0625rem);
+  text-align: center;
+}
