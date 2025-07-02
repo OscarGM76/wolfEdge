@@ -1,8 +1,8 @@
 export default function decorate(block) {
   let selector = null;
   let backgroundProperties = {
-    'backgroundImage' : null,
     'backgroundColor' : null,
+    'backgroundImage' : null,
     'backgroundPosition' : null,
     'backgroundRepeat' : null,
     'backgroundSize' : null,
@@ -19,20 +19,20 @@ export default function decorate(block) {
     if (index === "Class") {
       selector = document.querySelector("." + value);
     }
-    if (index === "Color") {
+    if (index === "backgroundColor") {
       backgroundProperties.backgroundColor = value;
     }
-    if (index === "Image") {
+    if (index === "backgroundImage") {
       value = element.querySelectorAll(':scope > div:last-child img')[0].getAttribute("src");
       backgroundProperties.backgroundImage = `url(${value})`;
     }
-    if (index === "Position") {
+    if (index === "backgroundPosition") {
       backgroundProperties.backgroundPosition = value;
     }
-    if (index === "Repeat") {
+    if (index === "backgroundRepeat") {
       backgroundProperties.backgroundRepeat = value;
     }
-    if (index === "Size") {
+    if (index === "backgroundSize") {
       backgroundProperties.backgroundSize = value;
     }
     console.table(backgroundProperties);
