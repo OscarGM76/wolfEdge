@@ -64,6 +64,11 @@ async function setLanguage() {
   //   });
   // });
 }
+
+async function isExternalLink(link) {
+  return link.hostname === window.location.hostname;
+}
+
 async function applyUrlToButtons(param) {
   const lang = localStorage.getItem('language') || 'es';
 
@@ -77,8 +82,10 @@ async function applyUrlToButtons(param) {
 function getLanguage() {
   return localStorage.getItem('language') || 'es';
 }
+
 export {
   setLanguage,
   applyUrlToButtons,
-  getLanguage
+  getLanguage,
+  isExternalLink
 };

@@ -1,4 +1,4 @@
-import { applyUrlToButtons } from './wolfsellers.js';
+import { applyUrlToButtons, isExternalLink } from './wolfsellers.js';
 
 /*
  * Copyright 2025 Adobe. All rights reserved.
@@ -397,8 +397,9 @@ async function decorateButtons(element) {
   const links = element.querySelectorAll('a');
   for (const a of links) {
     a.title = a.title || a.textContent;
-    const newHref = await applyUrlToButtons(a); // puedes descomentar si necesitas traducción
-    a.href = newHref;
+    if (await isExternalLink(a)) { // puedes descomentar si necesitas traducción
+      a.href = await applyUrlToButtons(a);
+    }
     if (a.href !== a.textContent) {
       const up = a.parentElement;
       const twoup = up?.parentElement;
